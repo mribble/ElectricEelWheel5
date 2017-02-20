@@ -1,0 +1,483 @@
+Cmp-Mod V01 Genere par PcbNew le 2/11/2016 6:38:42 PM
+
+BeginCmp
+TimeStamp = 566681C9
+Path = /5626FFA2
+Reference = U5;
+ValeurCmp = IX4428N;
+IdModule  = SOIC-8;
+EndCmp
+
+BeginCmp
+TimeStamp = 566681DB
+Path = /566D3E64
+Reference = U6;
+ValeurCmp = IX4428N;
+IdModule  = SOIC-8;
+EndCmp
+
+BeginCmp
+TimeStamp = 56B6F810
+Path = /5625FB2B
+Reference = U4;
+ValeurCmp = CD74AC00;
+IdModule  = SOIC-14;
+EndCmp
+
+BeginCmp
+TimeStamp = 5666824F
+Path = /5626F5DE
+Reference = R1;
+ValeurCmp = 10k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668273
+Path = /566D213E
+Reference = R3;
+ValeurCmp = 0k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = 566682B0
+Path = /564AF032
+Reference = P6;
+ValeurCmp = R/PE;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = 569CB236
+Path = /54710847
+Reference = P2;
+ValeurCmp = Motor;
+IdModule  = Screw_Terminal_Block_2P;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668336
+Path = /5643D2AE
+Reference = F1;
+ValeurCmp = PTC-1.25A;
+IdModule  = PTC_2920;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668344
+Path = /547108A1
+Reference = J2;
+ValeurCmp = JACK_DC;
+IdModule  = JACK_2.1_DC;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668359
+Path = /547108BA
+Reference = J1;
+ValeurCmp = JACK_STEREO_SW;
+IdModule  = JACK_1-4_STEREO;
+EndCmp
+
+BeginCmp
+TimeStamp = 5695A344
+Path = /54710892
+Reference = X1;
+ValeurCmp = HOLE;
+IdModule  = HOLE_4-40;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668363
+Path = /54710BCE
+Reference = X2;
+ValeurCmp = HOLE;
+IdModule  = HOLE_4-40;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668377
+Path = /5470B8DC
+Reference = U1;
+ValeurCmp = ATTINY45-P;
+IdModule  = DIP-8_300;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668396
+Path = /5689B95F
+Reference = C10;
+ValeurCmp = 100uF;
+IdModule  = c_elec_6.3x5.7;
+EndCmp
+
+BeginCmp
+TimeStamp = 566683B5
+Path = /54710DA8
+Reference = C1;
+ValeurCmp = 100uF;
+IdModule  = c_elec_6.3x5.7;
+EndCmp
+
+BeginCmp
+TimeStamp = 566683D4
+Path = /5689B8ED
+Reference = C4;
+ValeurCmp = 100uF;
+IdModule  = c_elec_6.3x5.7;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668406
+Path = /566D5867
+Reference = C14;
+ValeurCmp = 0.1uF;
+IdModule  = c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668410
+Path = /547111AD
+Reference = C2;
+ValeurCmp = 0.1uF;
+IdModule  = c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 5666841A
+Path = /566D5672
+Reference = C8;
+ValeurCmp = 0.1uF;
+IdModule  = c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668424
+Path = /566D55CF
+Reference = C5;
+ValeurCmp = 0.1uF;
+IdModule  = c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 5694AEFF
+Path = /566D582A
+Reference = C9;
+ValeurCmp = 0.1uF;
+IdModule  = c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668438
+Path = /566D5613
+Reference = C6;
+ValeurCmp = 0.1uF;
+IdModule  = c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668442
+Path = /566D5440
+Reference = C3;
+ValeurCmp = 0.1uF;
+IdModule  = c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 568F42B7
+Path = /566D1D24
+Reference = U2;
+ValeurCmp = KA78xxE;
+IdModule  = TO252M;
+EndCmp
+
+BeginCmp
+TimeStamp = 5666828E
+Path = /566D1B37
+Reference = P3;
+ValeurCmp = Speed;
+IdModule  = SIL-3-RT;
+EndCmp
+
+BeginCmp
+TimeStamp = 56B95CD0
+Path = /560958D0
+Reference = P1;
+ValeurCmp = Motor;
+IdModule  = SIL-4-RT;
+EndCmp
+
+BeginCmp
+TimeStamp = 5666829A
+Path = /566D1BA2
+Reference = P4;
+ValeurCmp = Aux;
+IdModule  = SIL-3-RT;
+EndCmp
+
+BeginCmp
+TimeStamp = 56677D5A
+Path = /560A6F02
+Reference = R4;
+ValeurCmp = 0k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = 566A3403
+Path = /5471108C
+Reference = C7;
+ValeurCmp = 1uF;
+IdModule  = c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 566683E8
+Path = /566D5D24
+Reference = C11;
+ValeurCmp = 1uF;
+IdModule  = c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 566683F2
+Path = /566D5E2F
+Reference = C12;
+ValeurCmp = 1uF;
+IdModule  = c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 566683FC
+Path = /566D5DE8
+Reference = C13;
+ValeurCmp = 1uF;
+IdModule  = c_0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 569FE8A5
+Path = /568DADA7
+Reference = R8;
+ValeurCmp = 270;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = 56AD2D31
+Path = /568DAD9C
+Reference = R6;
+ValeurCmp = 270;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = 5695F6E3
+Path = /56949D53
+Reference = R10;
+ValeurCmp = 270;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = 568F1A58
+Path = /568AC903
+Reference = R5;
+ValeurCmp = 270;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = 5695F009
+Path = /568B419A
+Reference = R9;
+ValeurCmp = 270;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = 568F1A70
+Path = /568B414D
+Reference = R7;
+ValeurCmp = 270;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = 568F1A7F
+Path = /568E2A5D
+Reference = D3;
+ValeurCmp = Green;
+IdModule  = SM0603_Diode;
+EndCmp
+
+BeginCmp
+TimeStamp = 569A26B2
+Path = /568B2C1C
+Reference = D2;
+ValeurCmp = Green;
+IdModule  = SM0603_Diode;
+EndCmp
+
+BeginCmp
+TimeStamp = 568F1A9D
+Path = /568B2C2B
+Reference = D5;
+ValeurCmp = Red;
+IdModule  = SM0603_Diode;
+EndCmp
+
+BeginCmp
+TimeStamp = 569A2940
+Path = /568AFB2E
+Reference = D4;
+ValeurCmp = R/G;
+IdModule  = LED_T1_BiPolar_100;
+EndCmp
+
+BeginCmp
+TimeStamp = 568F1ACA
+Path = /568B1FBD
+Reference = C17;
+ValeurCmp = 0.1uF;
+IdModule  = c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 568F1AD4
+Path = /568B18A9
+Reference = C18;
+ValeurCmp = 0.1uF;
+IdModule  = c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 568F1ADE
+Path = /568A135E
+Reference = C15;
+ValeurCmp = 0.1uF;
+IdModule  = c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 568F1AE8
+Path = /568A1172
+Reference = C16;
+ValeurCmp = 0.1uF;
+IdModule  = c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 5694D863
+Path = /568DAD91
+Reference = R11;
+ValeurCmp = 270;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = 569503DC
+Path = /5694975E
+Reference = P5;
+ValeurCmp = Status I/O;
+IdModule  = SIL-5-RT;
+EndCmp
+
+BeginCmp
+TimeStamp = 56AD2E7F
+Path = /5471080B
+Reference = U3;
+ValeurCmp = KA7805E;
+IdModule  = TO252M;
+EndCmp
+
+BeginCmp
+TimeStamp = 5666821B
+Path = /5614D1DA
+Reference = U8;
+ValeurCmp = SI4554DY;
+IdModule  = SO-8P2;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668243
+Path = /566D6495
+Reference = U7;
+ValeurCmp = SI4554DY;
+IdModule  = SO-8P2;
+EndCmp
+
+BeginCmp
+TimeStamp = 5699F83F
+Path = /5699EC7A
+Reference = C19;
+ValeurCmp = 0.1uF;
+IdModule  = c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 5699F849
+Path = /5699EDAB
+Reference = C20;
+ValeurCmp = 0.1uF;
+IdModule  = c_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 56AC2FAA
+Path = /568A204C
+Reference = D1;
+ValeurCmp = LED_RT;
+IdModule  = LED_RT_100;
+EndCmp
+
+BeginCmp
+TimeStamp = 569A29C5
+Path = /5699E6CE
+Reference = PS2;
+ValeurCmp = CONN_1;
+IdModule  = SIL-1;
+EndCmp
+
+BeginCmp
+TimeStamp = 569A29CE
+Path = /5699E6E7
+Reference = PS1;
+ValeurCmp = CONN_1;
+IdModule  = SIL-1;
+EndCmp
+
+BeginCmp
+TimeStamp = 569F6455
+Path = /569F5EFF
+Reference = R13;
+ValeurCmp = 0k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = 569F6461
+Path = /569F61BF
+Reference = R12;
+ValeurCmp = 0k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = 56668267
+Path = /568A20B7
+Reference = R2;
+ValeurCmp = 820;
+IdModule  = r_1206;
+EndCmp
+
+BeginCmp
+TimeStamp = 56B6F7AD
+Path = 
+Reference = ref***;
+ValeurCmp = val***;
+IdModule  = EEW_Logo_small;
+EndCmp
+
+EndListe

@@ -1,0 +1,43 @@
+EESchema-DOCLIB  Version 2.0  Date: 2/9/2016 7:55:49 PM
+#
+$CMP CONN_1
+D 1 pin
+K CONN
+$ENDCMP
+#
+$CMP CONN_5
+D Symbole general de connecteur
+K CONN
+$ENDCMP
+#
+$CMP HARDWARE
+D Hardware Components with no PCB footprints
+K Hardware
+$ENDCMP
+#
+$CMP LED_R/G
+D LED
+K LED, Bipolar
+$ENDCMP
+#
+$CMP LED_RT
+D Diode schottky
+K DEV DIODE
+$ENDCMP
+#
+$CMP LED_SMT
+D LED
+K LED
+$ENDCMP
+#
+$CMP PTC
+D Resistance
+K R DEV
+$ENDCMP
+#
+$CMP SIL-5-RT
+D Symbole general de connecteur
+K CONN
+$ENDCMP
+#
+#End Doc Library

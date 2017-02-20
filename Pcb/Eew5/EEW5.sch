@@ -1,0 +1,1969 @@
+EESchema Schematic File Version 2
+LIBS:EEW5
+LIBS:EEW5_1b-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Electric Eel Wheel 5"
+Date "19 feb 2016"
+Rev "1b"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY45-P U1
+U 1 1 5470B8DC
+P 6600 2550
+F 0 "U1" H 7650 2100 60  0000 C CNN
+F 1 "ATTINY45-P" H 7100 2100 60  0000 C CNN
+F 2 "DIP-8_300" H 6295 2105 60  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/36/Atmel-2586-AVR-8-bit-Microcontroller-ATtiny25-ATti-276549.pdf" H 6600 2550 60  0001 C CNN
+F 4 "Mouser" H 6600 2550 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Atmel/ATtiny45-20PU/?qs=sGAEpiMZZMvqv2n3s2xjsVIKSdqlAUq6Klh%252bsqgDu4U%3d" H 6600 2550 60  0001 C CNN "Source-1-DataPage"
+F 6 "556-ATTINY45-20PU " H 6600 2550 60  0001 C CNN "Source-1-PN"
+F 7 "1.07 " H 6600 2550 60  0001 C CNN "Source-1-P/100"
+F 8 "ATtiny45-20PU" H 6600 2550 60  0001 C CNN "MfgPN"
+	1    6600 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 7805 U3
+U 1 1 5471080B
+P 2900 2620
+F 0 "U3" H 3020 2400 60  0000 C CNN
+F 1 "KA7805E" H 2900 2820 60  0000 C CNN
+F 2 "TO252M" H 2900 2720 40  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/149/KA7805E-189535.pdf" H 2900 2620 60  0001 C CNN
+F 4 "Mouser" H 2900 2620 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Fairchild-Semiconductor/KA7805ERTF/?qs=sGAEpiMZZMtUqDgmOWBjgBdS%2f7EjnfrZnwtxKz1iBis%3d" H 2900 2620 60  0001 C CNN "Source-1-DataPage"
+F 6 "512-KA7805ERTF " H 2900 2620 60  0001 C CNN "Source-1-PN"
+F 7 "0.388 " H 2900 2620 60  0001 C CNN "Source-1-P/100"
+F 8 "KA7805ERTF" H 2900 2620 60  0001 C CNN "MfgPN"
+	1    2900 2620
+	1    0    0    -1  
+$EndComp
+$Comp
+L 5V #PWR01
+U 1 1 5471081A
+P 4100 2520
+F 0 "#PWR01" H 4100 2620 40  0001 C CNN
+F 1 "5V" H 4100 2645 40  0000 C CNN
+F 2 "~" H 4100 2520 60  0000 C CNN
+F 3 "~" H 4100 2520 60  0000 C CNN
+	1    4100 2520
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_2 P2
+U 1 1 54710847
+P 2800 6000
+F 0 "P2" V 2750 6000 40  0000 C CNN
+F 1 "Motor" V 2860 6000 40  0000 C CNN
+F 2 "Screw_Terminal_Block_2P" V 2800 6000 15  0000 C CNN
+F 3 "http://www.phoenixcontact.com/us/products/1984617/pdf" H 2800 6000 60  0001 C CNN
+F 4 "Mouser" V 2800 6000 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Phoenix-Contact/1984617/?qs=sGAEpiMZZMvXvCN7QvKasdS2d7Pswheid%2f9F8Rro4EA%3d" V 2800 6000 60  0001 C CNN "Source-1-DataPage"
+F 6 "651-1984617 " V 2800 6000 60  0001 C CNN "Source-1-PN"
+F 7 "0.364 " V 2800 6000 60  0001 C CNN "Source-1-P/100"
+F 8 "1984617" V 2800 6000 60  0001 C CNN "MfgPN"
+	1    2800 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L HOLE X1
+U 1 1 54710892
+P 10790 6490
+F 0 "X1" H 10790 6390 60  0000 C CNN
+F 1 "HOLE" H 10790 6590 60  0000 C CNN
+F 2 "HOLE_4-40" H 10780 6320 30  0000 C CNN
+F 3 "~" H 10790 6490 60  0000 C CNN
+	1    10790 6490
+	1    0    0    -1  
+$EndComp
+$Comp
+L JACK_DC J2
+U 1 1 547108A1
+P 1200 2720
+F 0 "J2" H 1050 3020 50  0000 C CNN
+F 1 "JACK_DC" H 1150 2470 50  0000 C CNN
+F 2 "JACK_2.1_DC" H 1150 2390 40  0000 C CNN
+F 3 "http://www.cui.com/product/resource/pj-002a.pdf" H 1200 2720 60  0001 C CNN
+F 4 "Digikey" H 1200 2720 60  0001 C CNN "Source-1"
+F 5 "http://www.digikey.com/product-detail/en/PJ-002A/CP-002A-ND/96962" H 1200 2720 60  0001 C CNN "Source-1-DataPage"
+F 6 "CP-002A-ND" H 1200 2720 60  0001 C CNN "Source-1-PN"
+F 7 "0.43710" H 1200 2720 60  0001 C CNN "Source-1-P/100"
+F 8 "PJ-002A" H 1200 2720 60  0001 C CNN "MfgPN"
+F 9 "DC IN" V 880 2715 40  0000 C CNN "Name"
+	1    1200 2720
+	1    0    0    -1  
+$EndComp
+$Comp
+L JACK_STEREO_SW J1
+U 1 1 547108BA
+P 10470 3830
+F 0 "J1" V 10170 3830 50  0000 C BNN
+F 1 "JACK_STEREO_SW" H 10420 4080 50  0000 C CNN
+F 2 "JACK_1-4_STEREO" H 10470 4180 60  0000 C CNN
+F 3 "http://www.neutrik.us/en-us/plugs-jacks/slim-jacks/nrj6hf-1" H 10470 3830 60  0001 C CNN
+F 4 "Mouser" V 10470 3830 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/REAN-Neutrik/NRJ6HF-1/?qs=sGAEpiMZZMv0W4pxf2HiV1EdQ7jplh8ojg99rL%2ffw1c%3d" V 10470 3830 60  0001 C CNN "Source-1-DataPage"
+F 6 "550-20384 " V 10470 3830 60  0001 C CNN "Source-1-PN"
+F 7 "0.474" V 10470 3830 60  0001 C CNN "Source-1-P/100"
+F 8 "NRJ6HF-1" V 10470 3830 60  0001 C CNN "MfgPN"
+F 9 "Foot Pedal" V 10020 3830 40  0000 C CNN "Name"
+	1    10470 3830
+	-1   0    0    1   
+$EndComp
+$Comp
+L HOLE X2
+U 1 1 54710BCE
+P 10790 6940
+F 0 "X2" H 10790 6840 60  0000 C CNN
+F 1 "HOLE" H 10790 7040 60  0000 C CNN
+F 2 "HOLE_4-40" H 10790 6770 30  0000 C CNN
+F 3 "~" H 10790 6940 60  0000 C CNN
+	1    10790 6940
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 54710CF2
+P 2050 3070
+F 0 "#PWR02" H 2050 3070 40  0001 C CNN
+F 1 "GND" H 2150 3020 40  0000 C CNN
+F 2 "~" H 2050 3070 60  0000 C CNN
+F 3 "~" H 2050 3070 60  0000 C CNN
+	1    2050 3070
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 54710CF8
+P 2400 3070
+F 0 "#PWR03" H 2400 3070 40  0001 C CNN
+F 1 "GND" H 2500 3020 40  0000 C CNN
+F 2 "~" H 2400 3070 60  0000 C CNN
+F 3 "~" H 2400 3070 60  0000 C CNN
+	1    2400 3070
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAP_ELEC C1
+U 1 1 54710DA8
+P 2050 2820
+F 0 "C1" H 2100 2920 50  0000 L CNN
+F 1 "100uF" H 2100 2720 50  0000 L CNN
+F 2 "c_elec_6.3x5.7" H 2225 2670 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/315/ABA0000CE2-40801.pdf" H 2050 2820 60  0001 C CNN
+F 4 "Mouser" H 2050 2820 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Panasonic/EEE-1EA101XP/?qs=%2fha2pyFadujOPgKJGMGECUsaH1YVAJGqPL3pZU3peYE%3d" H 2050 2820 60  0001 C CNN "Source-1-DataPage"
+F 6 "667-EEE-1EA101XP " H 2050 2820 60  0001 C CNN "Source-1-PN"
+F 7 "0.174 " H 2050 2820 60  0001 C CNN "Source-1-P/100"
+F 8 "EEE-1EA101XP" H 2050 2820 60  0001 C CNN "MfgPN"
+	1    2050 2820
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 54710E7E
+P 3400 3070
+F 0 "#PWR04" H 3400 3070 40  0001 C CNN
+F 1 "GND" H 3500 3020 40  0000 C CNN
+F 2 "~" H 3400 3070 60  0000 C CNN
+F 3 "~" H 3400 3070 60  0000 C CNN
+	1    3400 3070
+	1    0    0    -1  
+$EndComp
+$Comp
+L 5V #PWR05
+U 1 1 54710FEF
+P 10400 2390
+F 0 "#PWR05" H 10400 2490 40  0001 C CNN
+F 1 "5V" H 10400 2515 40  0000 C CNN
+F 2 "~" H 10400 2390 60  0000 C CNN
+F 3 "~" H 10400 2390 60  0000 C CNN
+	1    10400 2390
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 5V #PWR06
+U 1 1 54711086
+P 5000 2250
+F 0 "#PWR06" H 5000 2350 40  0001 C CNN
+F 1 "5V" H 5000 2375 40  0000 C CNN
+F 2 "~" H 5000 2250 60  0000 C CNN
+F 3 "~" H 5000 2250 60  0000 C CNN
+	1    5000 2250
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 5471108C
+P 5000 2550
+F 0 "C7" H 5010 2620 40  0000 L CNN
+F 1 "1uF" H 5006 2465 40  0000 L CNN
+F 2 "c_0805" H 5090 2415 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/447/UPY-GP_NP0_16V-to-50V_8-3714.pdf" H 5000 2550 60  0001 C CNN
+F 4 "Mouser" H 5000 2550 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Yageo/CC0805ZRY5V8BB105/?qs=%2fha2pyFadugpDknywlOZYTYgt%252bIWOqWFkRwN%2fPTZnw950X40GSEuLQ%3d%3d" H 5000 2550 60  0001 C CNN "Source-1-DataPage"
+F 6 "603-CC805ZRY5V8BB105 " H 5000 2550 60  0001 C CNN "Source-1-PN"
+F 7 "0.021 " H 5000 2550 60  0001 C CNN "Source-1-P/100"
+F 8 "CC0805ZRY5V8BB105" H 5000 2550 60  0001 C CNN "MfgPN"
+	1    5000 2550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 547110B0
+P 5000 2950
+F 0 "#PWR07" H 5000 2950 40  0001 C CNN
+F 1 "GND" H 5100 2900 40  0000 C CNN
+F 2 "~" H 5000 2950 60  0000 C CNN
+F 3 "~" H 5000 2950 60  0000 C CNN
+	1    5000 2950
+	-1   0    0    -1  
+$EndComp
+Text Label 8280 2700 0    60   ~ 0
+M_DIR
+$Comp
+L C C2
+U 1 1 547111AD
+P 2400 2820
+F 0 "C2" H 2410 2890 40  0000 L CNN
+F 1 "0.1uF" H 2406 2735 40  0000 L CNN
+F 2 "c_0603" H 2500 2685 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 2400 2820 60  0001 C CNN
+F 4 "Mouser" H 2400 2820 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kemet/C0603C104K3RAC7411/?qs=sGAEpiMZZMs0AnBnWHyRQDE3Md0GeJarI3X5xjtcGYw%3d" H 2400 2820 60  0001 C CNN "Source-1-DataPage"
+F 6 "80-C0603104K3RAC7411 " H 2400 2820 60  0001 C CNN "Source-1-PN"
+F 7 "0.02 " H 2400 2820 60  0001 C CNN "Source-1-P/100"
+F 8 "C0603C104K3RAC7411" H 2400 2820 60  0001 C CNN "MfgPN"
+	1    2400 2820
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 547111C3
+P 5750 4350
+F 0 "#PWR08" H 5750 4350 40  0001 C CNN
+F 1 "GND" H 5850 4300 40  0000 C CNN
+F 2 "~" H 5750 4350 60  0000 C CNN
+F 3 "~" H 5750 4350 60  0000 C CNN
+	1    5750 4350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 54711265
+P 3100 6240
+F 0 "#PWR09" H 3100 6240 40  0001 C CNN
+F 1 "GND" H 3210 6150 40  0000 C CNN
+F 2 "~" H 3100 6240 60  0000 C CNN
+F 3 "~" H 3100 6240 60  0000 C CNN
+	1    3100 6240
+	-1   0    0    -1  
+$EndComp
+Text Label 8950 5250 2    60   ~ 0
+M_DIR
+$Comp
+L GND #PWR010
+U 1 1 54711A1B
+P 9060 6890
+F 0 "#PWR010" H 9060 6890 40  0001 C CNN
+F 1 "GND" H 8960 6840 40  0000 C CNN
+F 2 "~" H 9060 6890 60  0000 C CNN
+F 3 "~" H 9060 6890 60  0000 C CNN
+	1    9060 6890
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10120 3730
+Text Notes 700  1270 0    157  ~ 31
+Power Supply\n
+Text Notes 5450 3900 0    157  ~ 31
+Motor Controller\n
+Text Notes 7340 2100 2    157  ~ 31
+Micro Controller\n
+Text Label 8490 3340 2    60   ~ 0
+PEn_x
+Text Label 10010 3780 2    60   ~ 0
+PedalSig
+Text Label 8470 2600 2    60   ~ 0
+Speed
+Text Label 8150 2400 0    60   ~ 0
+M_EN
+Text Label 8850 4500 2    60   ~ 0
+M_EN
+$Comp
+L CONN_4 P1
+U 1 1 560958D0
+P 3550 6000
+F 0 "P1" V 3505 5910 40  0000 C CNN
+F 1 "Motor" V 3620 5915 40  0000 C CNN
+F 2 "SIL-4-RT" V 3565 5905 40  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/154/bus-12-050-356030.pdf" H 3550 5950 60  0001 C CNN
+F 4 "Mouser" V 3550 6000 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/FCI/68016-204HLF/?qs=sGAEpiMZZMs%252bGHln7q6pm2nKUjHUi6l6PUFmYnOqxnw%3d" V 3550 6000 60  0001 C CNN "Source-1-DataPage"
+F 6 "649-68016-204HLF " V 3550 6000 60  0001 C CNN "Source-1-PN"
+F 7 "0.17 " V 3550 6000 60  0001 C CNN "Source-1-P/100"
+F 8 "68016-204HLF" V 3550 6000 60  0001 C CNN "MfgPN"
+	1    3550 6000
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 560A640B
+P 2900 2070
+F 0 "#PWR011" H 2900 2070 40  0001 C CNN
+F 1 "GND" H 3000 2020 40  0000 C CNN
+F 2 "~" H 2900 2070 60  0000 C CNN
+F 3 "~" H 2900 2070 60  0000 C CNN
+	1    2900 2070
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 560A647F
+P 2140 2010
+F 0 "#PWR012" H 2140 2010 40  0001 C CNN
+F 1 "GND" H 2240 1960 40  0000 C CNN
+F 2 "~" H 2140 2010 60  0000 C CNN
+F 3 "~" H 2140 2010 60  0000 C CNN
+	1    2140 2010
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 560A6F02
+P 2900 890
+F 0 "R4" V 2980 890 60  0000 C TNN
+F 1 "0k" V 2907 891 40  0000 C CNN
+F 2 "SM0603_Resistor" V 2830 890 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 2900 890 30  0001 C CNN
+F 4 "Mouser" V 2900 890 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay-Dale/CRCW06030000Z0EB/?qs=sGAEpiMZZMu61qfTUdNhG2DpbjADlD3GPH2VLSi4g08%3d" V 2900 890 60  0001 C CNN "Source-1-DataPage"
+F 6 "71-CRCW06030000Z0EB " V 2900 890 60  0001 C CNN "Source-1-PN"
+F 7 "0.008 " V 2900 890 60  0001 C CNN "Source-1-P/100"
+F 8 "CRCW06030000Z0EB" V 2900 890 60  0001 C CNN "MfgPN"
+	1    2900 890 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SI4554DY U8
+U 1 1 5614D1DA
+P 1650 5650
+F 0 "U8" H 1650 6350 47  0000 C TNN
+F 1 "SI4554DY" H 1650 6250 47  0000 C CNN
+F 2 "SO-8P2" H 1560 5640 60  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/si4554dy-104020.pdf" H 2150 4950 60  0001 C CNN
+F 4 "Mouser" H 1650 5650 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay/SI4554DY-T1-GE3/?qs=%2fha2pyFadugtStoVIbbNNDBXi0hX2Jamj2PWTbgX644%3d" H 1650 5650 60  0001 C CNN "Source1-DataPage"
+F 6 "78-SI4554DY-T1-GE3 " H 1650 5650 60  0001 C CNN "Source-1-PN"
+F 7 "0.47 " H 1650 5650 60  0001 C CNN "Source-1-P/100"
+F 8 "SI4554DY-T1-GE3" H 1650 5650 60  0001 C CNN "MfgPN"
+	1    1650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 7400 U4
+U 4 1 5625FB2B
+P 7240 1300
+F 0 "U4" H 7190 1400 60  0000 C CNN
+F 1 "CD74AC00" H 7185 1295 60  0000 C CNN
+F 2 "SOIC-14" H 7190 1200 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74ac00.pdf" H 7240 1300 60  0001 C CNN
+F 4 "Mouser" H 7240 1300 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Texas-Instruments/CD74AC00M96/?qs=sGAEpiMZZMtMa9lbYwD6ZFfNaxHsgUwatKoMTvYnZbM%3d" H 7240 1300 60  0001 C CNN "Source-1-DataPage"
+F 6 "595-CD74AC00M96 " H 7240 1300 60  0001 C CNN "Source-1-PN"
+F 7 "0.308 " H 7240 1300 60  0001 C CNN "Source-1-P/100"
+F 8 "CD74AC00M96" H 7240 1300 60  0001 C CNN "MfgPN"
+	4    7240 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5626F5DE
+P 9060 6600
+F 0 "R1" V 9140 6600 40  0000 C CNN
+F 1 "10k" V 9067 6601 40  0000 C CNN
+F 2 "SM0603_Resistor" V 8990 6600 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 9060 6600 30  0001 C CNN
+F 4 "Mouser" V 9060 6600 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay-Dale/CRCW060310K0JNEB/?qs=sGAEpiMZZMtlubZbdhIBIOUNd8TBvDJ%252bbOCkkGw1V08%3d" V 9060 6600 60  0001 C CNN "Source-1-DataPage"
+F 6 "71-CRCW060310K0JNEB " V 9060 6600 60  0001 C CNN "Source-1-PN"
+F 7 "0.008 " V 9060 6600 60  0001 C CNN "Source-1-P/100"
+F 8 "CRCW060310K0JNEB" V 9060 6600 60  0001 C CNN "MfgPN"
+	1    9060 6600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L TC4428 U5
+U 1 1 5626FFA2
+P 6350 4750
+F 0 "U5" H 6700 4300 59  0000 C BNN
+F 1 "IX4428N" H 6350 4300 59  0000 C BNN
+F 2 "SOIC-8" H 6355 4455 59  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/205/IX4426-27-28-257212.pdf" H 8350 3800 60  0001 C CNN
+F 4 "Mouser" H 6350 4750 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/IXYS-Integrated-Circuits/IX4428N/?qs=sGAEpiMZZMvQcoNRkxSQkmHo7O1qUkIsMyAyTqa2cgI%3d" H 6350 4750 60  0001 C CNN "Source-1-DataPage"
+F 6 "849-IX4428N " H 6350 4750 60  0001 C CNN "Source-1-PN"
+F 7 "0.624 " H 6350 4750 60  0001 C CNN "Source-1-P/100"
+F 8 "IX$$28N" H 6350 4750 60  0001 C CNN "MfgPN"
+	1    6350 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 562742D9
+P 4250 1520
+F 0 "#PWR013" H 4250 1520 40  0001 C CNN
+F 1 "GND" H 4350 1470 40  0000 C CNN
+F 2 "~" H 4250 1520 60  0000 C CNN
+F 3 "~" H 4250 1520 60  0000 C CNN
+	1    4250 1520
+	1    0    0    -1  
+$EndComp
+Text Notes 2701 1229 0    40   ~ 0
+Vaux-2B
+$Comp
+L 5V #PWR014
+U 1 1 56275F8B
+P 9850 6300
+F 0 "#PWR014" H 9850 6400 40  0001 C CNN
+F 1 "5V" H 9850 6425 40  0000 C CNN
+F 2 "~" H 9850 6300 60  0000 C CNN
+F 3 "~" H 9850 6300 60  0000 C CNN
+	1    9850 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L PTC F1
+U 1 1 5643D2AE
+P 3350 4450
+F 0 "F1" V 3250 4450 40  0000 C TNN
+F 1 "PTC-1.25A" V 3357 4451 30  0000 C CNN
+F 2 "PTC_2920" V 3450 4450 30  0000 C BNN
+F 3 "http://www.mouser.com/ds/2/643/0ZCF-526704.pdf" H 3350 4450 30  0001 C CNN
+F 4 "Mouser" V 3350 4450 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Bel/0ZCF0125FF2C/?qs=%2fha2pyFadujAgaJfwNDz4VxVVOFW6y9Vk5Ews7G%252bT%252bSs%2fqr%252bg%252b9bvA%3d%3d" V 3350 4450 60  0001 C CNN "Source-1-DataPage"
+F 6 "530-0ZCF0125FF2C " V 3350 4450 60  0001 C CNN "Source-1-PN"
+F 7 "0.155 " V 3350 4450 60  0001 C CNN "Source-1-P/100"
+F 8 "0ZCF0125FF2C" V 3350 4450 60  0001 C CNN "MfgPN"
+	1    3350 4450
+	0    -1   1    0   
+$EndComp
+Text Label 8330 2300 2    60   ~ 0
+Status
+Text Label 8830 6250 2    60   ~ 0
+M_EN
+Text Label 8630 2800 2    60   ~ 0
+PedalEnable
+Text Label 8430 2500 2    60   ~ 0
+PedalSig
+Text Label 8620 900  2    60   ~ 0
+Status
+$Comp
+L CONN_2 P6
+U 1 1 564AF032
+P 7830 3240
+F 0 "P6" V 7875 3250 40  0000 C CNN
+F 1 "R/PE" V 7980 3240 40  0000 C CNN
+F 2 "SIL-2" V 7790 3240 60  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/154/68000-274373.pdf" H 7830 3240 60  0001 C CNN
+F 4 "Mouser" V 7830 3240 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/FCI/68001-402HLF/?qs=sGAEpiMZZMs%252bGHln7q6pm24n0txessAMsVeW4psgO%2f4%3d" V 7830 3240 60  0001 C CNN "Source-1-DataPage"
+F 6 "649-68001-402HLF " V 7830 3240 60  0001 C CNN "Source-1-PN"
+F 7 "0.068 " V 7830 3240 60  0001 C CNN "Source-1-P/100"
+F 8 "68001-402HLF" V 7830 3240 60  0001 C CNN "MfgPN"
+	1    7830 3240
+	-1   0    0    1   
+$EndComp
+Text Label 2440 5500 0    60   ~ 0
+M-
+Text Label 3810 5500 0    60   ~ 0
+M+
+Text Label 5200 5150 0    60   ~ 0
+~CW_HS
+Text Label 5350 4600 0    60   ~ 0
+CW_LS
+Text Label 5200 6150 0    60   ~ 0
+CCW_LS
+Text Label 5300 4850 0    60   ~ 0
+~CCW_HS
+Text Label 7050 6150 0    60   ~ 0
+~CCW
+Text Label 7050 4600 0    60   ~ 0
+~CW
+Text Label 800  5150 0    60   ~ 0
+~CCW_HS
+Text Label 850  6150 0    60   ~ 0
+CW_LS
+Text Label 8850 5750 2    60   ~ 0
+~M_DIR
+Text Label 9130 1300 2    60   ~ 0
+~Status
+Text Label 3800 1570 2    60   ~ 0
+AuxPwr
+Text Notes 588  6438 0    42   ~ 0
+Motor Connector Options:\nMtr-1A: Use of lower cost, non-polarized motor connector. Install P1, (4P Standard Rt Angle Header), do not install P2.  \nMtr-1B: Original connector. Install P2,  (2p Mini Screw Down Header), do not install P1.
+Text Notes 589  6339 0    71   ~ 14
+Assembly Options
+Text Notes 595  6655 0    42   ~ 0
+Auxiliary Power Options:\nVaux-2None: Auxiliary output not used. Do not installl C5, U2, R4, C6, C19, P4.\nVaux-2A: Auxiliary output powered by existing V+. Install R4, C19, P4. Do not install U2.  \nVaux-2B: Auxiliary output powered by +12v. Install C5, C6, C19, P4, U2, (use 7812 series for U2). Do not install R4.  \nVaux-2C: Auxiliary output powered by +5v. Install C5, C6, C19, P4, U2, (use 7805 series for U2). Do not install R4.
+Text Notes 600  7000 0    42   ~ 0
+Reset/Pedal Enable Options:\nR/PE-3None: No connection for Pedal enable options.  Do not install R3, R12, R13, C16, or P6\nR/PE-3A: Permanent connection for Pedal_Enable signal.  Install R3, R12, C16. Do not install R13, P6.\nR/PE-3B: Selectable Reset or Pedal_Enable connection. Install R3, C16, P6. Do not install R12, R13.  Add or remove the shoring jumper when required.\nR/PE Notes: In default mode U1 can be reset when P6 is shorted.  
+Text Label 3150 5150 0    60   ~ 0
+HPWR
+Text Label 3950 2570 0    39   ~ 0
+VCC
+Text Notes 8430 3550 0    40   ~ 8
+R/PE-3B
+Text Notes 2701 1167 0    40   ~ 0
+Vaux-2A
+Text Label 7050 5900 0    60   ~ 0
+~CW
+Text Label 7000 4850 0    60   ~ 0
+~CCW
+Text Label 8900 4700 2    60   ~ 0
+M_DIR
+Text Label 7020 6600 0    60   ~ 0
+HPWR
+Text Label 10310 2600 2    60   ~ 0
+Speed
+Text Notes 2701 1292 0    40   ~ 0
+Vaux-2C
+$Comp
+L CONN_3 P3
+U 1 1 566D1B37
+P 10750 2600
+F 0 "P3" V 10720 2600 50  0000 C CNN
+F 1 "Speed" V 10900 2600 40  0000 C CNN
+F 2 "SIL-3-RT" V 10800 2600 40  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/154/bus-12-050-356030.pdf" H 10750 2600 60  0001 C CNN
+F 4 "Mouser" V 10750 2600 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/FCI/68016-403HLF/?qs=sGAEpiMZZMs%252bGHln7q6pm5UEVHbf9fBzDY4ScTmmUK4%3d" V 10750 2600 60  0001 C CNN "Source-1-DataPage"
+F 6 "649-68016-403HLF " V 10750 2600 60  0001 C CNN "Source-1-PN"
+F 7 "0.08" V 10750 2600 60  0001 C CNN "Source-1-P/100"
+F 8 "68016-403HLF" V 10750 2600 60  0001 C CNN "MfgPN"
+	1    10750 2600
+	1    0    0    1   
+$EndComp
+$Comp
+L CONN_3 P4
+U 1 1 566D1BA2
+P 3900 950
+F 0 "P4" V 3930 950 50  0000 C CNN
+F 1 "Aux" V 4050 950 40  0000 C CNN
+F 2 "SIL-3-RT" V 3850 950 40  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/154/bus-12-050-356030.pdf" H 3900 950 60  0001 C CNN
+F 4 "Mouser" V 3900 950 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/FCI/68016-403HLF/?qs=sGAEpiMZZMs%252bGHln7q6pm5UEVHbf9fBzDY4ScTmmUK4%3d" V 3900 950 60  0001 C CNN "Source-1-DataPage"
+F 6 "649-68016-403HLF " V 3900 950 60  0001 C CNN "Source-1-PN"
+F 7 "0.08" V 3900 950 60  0001 C CNN "Source-1-P/100"
+F 8 "68016-403HLF" V 3900 950 60  0001 C CNN "MfgPN"
+	1    3900 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L 7805 U2
+U 1 1 566D1D24
+P 2900 1620
+F 0 "U2" H 3020 1410 60  0000 C CNN
+F 1 "KA78xxE" H 2900 1820 60  0000 C CNN
+F 2 "TO252M" H 2900 1720 40  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/149/KA7805E-189535.pdf" H 2900 1620 60  0001 C CNN
+F 4 "Mouser" H 2900 1620 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Fairchild-Semiconductor/KA7805ERTF/?qs=sGAEpiMZZMtUqDgmOWBjgBdS%2f7EjnfrZnwtxKz1iBis%3d" H 2900 1620 60  0001 C CNN "Source-1-DataPage"
+F 6 "512-KA7805ERTF " H 2900 1620 60  0001 C CNN "Source-1-PN"
+F 7 "0.388 " H 2900 1620 60  0001 C CNN "Source-1-P/100"
+F 8 "KA7805ERTF" H 2900 1620 60  0001 C CNN "MfgPN"
+	1    2900 1620
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 566D213E
+P 8900 3680
+F 0 "R3" V 8955 3680 40  0000 C TNN
+F 1 "0k" V 8907 3681 40  0000 C CNN
+F 2 "SM0603_Resistor" V 8830 3680 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 8900 3680 30  0001 C CNN
+F 4 "Mouser" V 8900 3680 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay-Dale/CRCW06030000Z0EB/?qs=sGAEpiMZZMu61qfTUdNhG2DpbjADlD3GPH2VLSi4g08%3d" V 8900 3680 60  0001 C CNN "Source-1-DataPage"
+F 6 "71-CRCW06030000Z0EB " V 8900 3680 60  0001 C CNN "Source-1-PN"
+F 7 "0.008 " V 8900 3680 60  0001 C CNN "Source-1-P/100"
+F 8 "CRCW06030000Z0EB" V 8900 3680 60  0001 C CNN "MfgPN"
+	1    8900 3680
+	-1   0    0    -1  
+$EndComp
+Text Label 6950 4150 0    60   ~ 0
+HPWR
+Text Label 1590 2570 0    60   ~ 0
+DC_In
+Text Label 3760 4450 0    60   ~ 0
+DC_In
+NoConn ~ 10120 3830
+$Comp
+L V+ #PWR015
+U 1 1 566D3193
+P 4270 4450
+F 0 "#PWR015" H 4270 4550 40  0001 C CNN
+F 1 "V+" H 4270 4575 40  0000 C CNN
+F 2 "~" H 4270 4450 60  0000 C CNN
+F 3 "~" H 4270 4450 60  0000 C CNN
+	1    4270 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L V+ #PWR016
+U 1 1 566D3237
+P 1890 2220
+F 0 "#PWR016" H 1890 2320 40  0001 C CNN
+F 1 "V+" H 1890 2345 40  0000 C CNN
+F 2 "~" H 1890 2220 60  0000 C CNN
+F 3 "~" H 1890 2220 60  0000 C CNN
+	1    1890 2220
+	1    0    0    -1  
+$EndComp
+Text Label 10155 6830 0    39   ~ 0
+GND
+Text Label 10270 6430 2    39   ~ 0
+VCC
+$Comp
+L GND #PWR017
+U 1 1 566D3AF8
+P 3900 3070
+F 0 "#PWR017" H 3900 3070 40  0001 C CNN
+F 1 "GND" H 4000 3020 40  0000 C CNN
+F 2 "~" H 3900 3070 60  0000 C CNN
+F 3 "~" H 3900 3070 60  0000 C CNN
+	1    3900 3070
+	-1   0    0    -1  
+$EndComp
+$Comp
+L TC4428 U6
+U 1 1 566D3E64
+P 6350 6000
+F 0 "U6" H 6700 5550 59  0000 C BNN
+F 1 "IX4428N" H 6350 5550 59  0000 C BNN
+F 2 "SOIC-8" H 6370 5720 59  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/205/IX4426-27-28-257212.pdf" H 8350 5050 60  0001 C CNN
+F 4 "Mouser" H 6350 6000 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/IXYS-Integrated-Circuits/IX4428N/?qs=sGAEpiMZZMvQcoNRkxSQkmHo7O1qUkIsMyAyTqa2cgI%3d" H 6350 6000 60  0001 C CNN "Source-1-DataPage"
+F 6 "849-IX4428N " H 6350 6000 60  0001 C CNN "Source-1-PN"
+F 7 "0.624 " H 6350 6000 60  0001 C CNN "Source-1-P/100"
+F 8 "IX$$28N" H 6350 6000 60  0001 C CNN "MfgPN"
+	1    6350 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 566D436E
+P 9850 6920
+F 0 "#PWR018" H 9850 6920 40  0001 C CNN
+F 1 "GND" H 9950 6870 40  0000 C CNN
+F 2 "~" H 9850 6920 60  0000 C CNN
+F 3 "~" H 9850 6920 60  0000 C CNN
+	1    9850 6920
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 566D44E1
+P 9900 4110
+F 0 "#PWR019" H 9900 4110 40  0001 C CNN
+F 1 "GND" H 10000 4060 40  0000 C CNN
+F 2 "~" H 9900 4110 60  0000 C CNN
+F 3 "~" H 9900 4110 60  0000 C CNN
+	1    9900 4110
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR020
+U 1 1 566D4507
+P 1750 3070
+F 0 "#PWR020" H 1750 3070 40  0001 C CNN
+F 1 "GND" H 1850 3020 40  0000 C CNN
+F 2 "~" H 1750 3070 60  0000 C CNN
+F 3 "~" H 1750 3070 60  0000 C CNN
+	1    1750 3070
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR021
+U 1 1 566D4E36
+P 3400 2021
+F 0 "#PWR021" H 3400 2021 40  0001 C CNN
+F 1 "GND" H 3500 1971 40  0000 C CNN
+F 2 "~" H 3400 2021 60  0000 C CNN
+F 3 "~" H 3400 2021 60  0000 C CNN
+	1    3400 2021
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR022
+U 1 1 566D4E52
+P 5770 6780
+F 0 "#PWR022" H 5770 6780 40  0001 C CNN
+F 1 "GND" H 5870 6730 40  0000 C CNN
+F 2 "~" H 5770 6780 60  0000 C CNN
+F 3 "~" H 5770 6780 60  0000 C CNN
+	1    5770 6780
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 566D4E64
+P 2900 3070
+F 0 "#PWR023" H 2900 3070 40  0001 C CNN
+F 1 "GND" H 3000 3020 40  0000 C CNN
+F 2 "~" H 2900 3070 60  0000 C CNN
+F 3 "~" H 2900 3070 60  0000 C CNN
+	1    2900 3070
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 566D4E7B
+P 5250 2950
+F 0 "#PWR024" H 5250 2950 40  0001 C CNN
+F 1 "GND" H 5350 2900 40  0000 C CNN
+F 2 "~" H 5250 2950 60  0000 C CNN
+F 3 "~" H 5250 2950 60  0000 C CNN
+	1    5250 2950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR025
+U 1 1 566D4EAF
+P 10400 2860
+F 0 "#PWR025" H 10400 2860 40  0001 C CNN
+F 1 "GND" H 10300 2810 40  0000 C CNN
+F 2 "~" H 10400 2860 60  0000 C CNN
+F 3 "~" H 10400 2860 60  0000 C CNN
+	1    10400 2860
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR026
+U 1 1 566D4EC1
+P 3600 4820
+F 0 "#PWR026" H 3600 4820 40  0001 C CNN
+F 1 "GND" H 3490 4720 40  0000 C CNN
+F 2 "~" H 3600 4820 60  0000 C CNN
+F 3 "~" H 3600 4820 60  0000 C CNN
+	1    3600 4820
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR027
+U 1 1 566D4ED3
+P 2500 4825
+F 0 "#PWR027" H 2500 4825 40  0001 C CNN
+F 1 "GND" H 2395 4720 40  0000 C CNN
+F 2 "~" H 2500 4825 60  0000 C CNN
+F 3 "~" H 2500 4825 60  0000 C CNN
+	1    2500 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 566D5440
+P 3400 2820
+F 0 "C3" H 3410 2890 40  0000 L CNN
+F 1 "0.1uF" H 3406 2735 40  0000 L CNN
+F 2 "c_0603" H 3490 2685 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 3400 2820 60  0001 C CNN
+F 4 "Mouser" H 3400 2820 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kemet/C0603C104K3RAC7411/?qs=sGAEpiMZZMs0AnBnWHyRQDE3Md0GeJarI3X5xjtcGYw%3d" H 3400 2820 60  0001 C CNN "Source-1-DataPage"
+F 6 "80-C0603104K3RAC7411 " H 3400 2820 60  0001 C CNN "Source-1-PN"
+F 7 "0.02 " H 3400 2820 60  0001 C CNN "Source-1-P/100"
+F 8 "C0603C104K3RAC7411" H 3400 2820 60  0001 C CNN "MfgPN"
+	1    3400 2820
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 566D55CF
+P 2140 1770
+F 0 "C5" H 2150 1840 40  0000 L CNN
+F 1 "0.1uF" H 2146 1685 40  0000 L CNN
+F 2 "c_0603" H 2235 1635 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 2140 1770 60  0001 C CNN
+F 4 "Mouser" H 2140 1770 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kemet/C0603C104K3RAC7411/?qs=sGAEpiMZZMs0AnBnWHyRQDE3Md0GeJarI3X5xjtcGYw%3d" H 2140 1770 60  0001 C CNN "Source-1-DataPage"
+F 6 "80-C0603104K3RAC7411 " H 2140 1770 60  0001 C CNN "Source-1-PN"
+F 7 "0.02 " H 2140 1770 60  0001 C CNN "Source-1-P/100"
+F 8 "C0603C104K3RAC7411" H 2140 1770 60  0001 C CNN "MfgPN"
+	1    2140 1770
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C6
+U 1 1 566D5613
+P 3400 1800
+F 0 "C6" H 3410 1870 40  0000 L CNN
+F 1 "0.1uF" H 3406 1715 40  0000 L CNN
+F 2 "c_0603" H 3490 1665 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 3400 1800 60  0001 C CNN
+F 4 "Mouser" H 3400 1800 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kemet/C0603C104K3RAC7411/?qs=sGAEpiMZZMs0AnBnWHyRQDE3Md0GeJarI3X5xjtcGYw%3d" H 3400 1800 60  0001 C CNN "Source-1-DataPage"
+F 6 "80-C0603104K3RAC7411 " H 3400 1800 60  0001 C CNN "Source-1-PN"
+F 7 "0.02 " H 3400 1800 60  0001 C CNN "Source-1-P/100"
+F 8 "C0603C104K3RAC7411" H 3400 1800 60  0001 C CNN "MfgPN"
+	1    3400 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 566D5672
+P 9680 6630
+F 0 "C8" H 9690 6560 40  0000 L CNN
+F 1 "0.1uF" H 9690 6710 40  0000 L CNN
+F 2 "c_0603" H 9775 6760 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 9680 6630 60  0001 C CNN
+F 4 "Mouser" H 9680 6630 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kemet/C0603C104K3RAC7411/?qs=sGAEpiMZZMs0AnBnWHyRQDE3Md0GeJarI3X5xjtcGYw%3d" H 9680 6630 60  0001 C CNN "Source-1-DataPage"
+F 6 "80-C0603104K3RAC7411 " H 9680 6630 60  0001 C CNN "Source-1-PN"
+F 7 "0.02 " H 9680 6630 60  0001 C CNN "Source-1-P/100"
+F 8 "C0603C104K3RAC7411" H 9680 6630 60  0001 C CNN "MfgPN"
+F 9 "(P3)" H 9750 6490 40  0000 C CNN "Name"
+	1    9680 6630
+	1    0    0    1   
+$EndComp
+$Comp
+L C C9
+U 1 1 566D582A
+P 9960 2800
+F 0 "C9" H 9980 2720 40  0000 L CNN
+F 1 "0.1uF" H 9970 2880 40  0000 L CNN
+F 2 "c_0603" H 10055 2930 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 9960 2800 60  0001 C CNN
+F 4 "Mouser" H 9960 2800 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kemet/C0603C104K3RAC7411/?qs=sGAEpiMZZMs0AnBnWHyRQDE3Md0GeJarI3X5xjtcGYw%3d" H 9960 2800 60  0001 C CNN "Source-1-DataPage"
+F 6 "80-C0603104K3RAC7411 " H 9960 2800 60  0001 C CNN "Source-1-PN"
+F 7 "0.02 " H 9960 2800 60  0001 C CNN "Source-1-P/100"
+F 8 "C0603C104K3RAC7411" H 9960 2800 60  0001 C CNN "MfgPN"
+	1    9960 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L C C14
+U 1 1 566D5867
+P 10290 6630
+F 0 "C14" H 10300 6700 40  0000 L CNN
+F 1 "0.1uF" H 10296 6545 40  0000 L CNN
+F 2 "c_0603" H 10380 6500 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 10290 6630 60  0001 C CNN
+F 4 "Mouser" H 10290 6630 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kemet/C0603C104K3RAC7411/?qs=sGAEpiMZZMs0AnBnWHyRQDE3Md0GeJarI3X5xjtcGYw%3d" H 10290 6630 60  0001 C CNN "Source-1-DataPage"
+F 6 "80-C0603104K3RAC7411 " H 10290 6630 60  0001 C CNN "Source-1-PN"
+F 7 "0.02 " H 10290 6630 60  0001 C CNN "Source-1-P/100"
+F 8 "C0603C104K3RAC7411" H 10290 6630 60  0001 C CNN "MfgPN"
+F 9 "(U4)" H 10360 6770 40  0000 C CNN "Name"
+	1    10290 6630
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 566D5D24
+P 3350 4700
+F 0 "C11" V 3395 4770 40  0000 L CNN
+F 1 "1uF" V 3310 4770 40  0000 L CNN
+F 2 "c_0805" V 3250 4830 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/447/UPY-GP_NP0_16V-to-50V_8-3714.pdf" H 3350 4700 60  0001 C CNN
+F 4 "Mouser" H 3350 4700 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Yageo/CC0805ZRY5V8BB105/?qs=%2fha2pyFadugpDknywlOZYTYgt%252bIWOqWFkRwN%2fPTZnw950X40GSEuLQ%3d%3d" H 3350 4700 60  0001 C CNN "Source-1-DataPage"
+F 6 "603-CC805ZRY5V8BB105 " H 3350 4700 60  0001 C CNN "Source-1-PN"
+F 7 "0.021 " H 3350 4700 60  0001 C CNN "Source-1-P/100"
+F 8 "CC0805ZRY5V8BB105" H 3350 4700 60  0001 C CNN "MfgPN"
+	1    3350 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C13
+U 1 1 566D5DE8
+P 6350 4150
+F 0 "C13" V 6310 4200 40  0000 L CNN
+F 1 "1uF" V 6400 4210 40  0000 L CNN
+F 2 "c_0805" V 6260 4280 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/447/UPY-GP_NP0_16V-to-50V_8-3714.pdf" H 6350 4150 60  0001 C CNN
+F 4 "Mouser" H 6350 4150 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Yageo/CC0805ZRY5V8BB105/?qs=%2fha2pyFadugpDknywlOZYTYgt%252bIWOqWFkRwN%2fPTZnw950X40GSEuLQ%3d%3d" H 6350 4150 60  0001 C CNN "Source-1-DataPage"
+F 6 "603-CC805ZRY5V8BB105 " H 6350 4150 60  0001 C CNN "Source-1-PN"
+F 7 "0.021 " H 6350 4150 60  0001 C CNN "Source-1-P/100"
+F 8 "CC0805ZRY5V8BB105" H 6350 4150 60  0001 C CNN "MfgPN"
+	1    6350 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C12
+U 1 1 566D5E2F
+P 6350 6600
+F 0 "C12" V 6310 6650 40  0000 L CNN
+F 1 "1uF" V 6400 6660 40  0000 L CNN
+F 2 "c_0805" V 6255 6730 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/447/UPY-GP_NP0_16V-to-50V_8-3714.pdf" H 6350 6600 60  0001 C CNN
+F 4 "Mouser" H 6350 6600 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Yageo/CC0805ZRY5V8BB105/?qs=%2fha2pyFadugpDknywlOZYTYgt%252bIWOqWFkRwN%2fPTZnw950X40GSEuLQ%3d%3d" H 6350 6600 60  0001 C CNN "Source-1-DataPage"
+F 6 "603-CC805ZRY5V8BB105 " H 6350 6600 60  0001 C CNN "Source-1-PN"
+F 7 "0.021 " H 6350 6600 60  0001 C CNN "Source-1-P/100"
+F 8 "CC0805ZRY5V8BB105" H 6350 6600 60  0001 C CNN "MfgPN"
+	1    6350 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L SI4554DY U7
+U 1 1 566D6495
+P 4700 5650
+F 0 "U7" H 4700 6350 47  0000 C TNN
+F 1 "SI4554DY" H 4700 6250 47  0000 C CNN
+F 2 "SO-8P2" H 4610 5650 60  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/si4554dy-104020.pdf" H 5200 4950 60  0001 C CNN
+F 4 "Mouser" H 4700 5650 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay/SI4554DY-T1-GE3/?qs=%2fha2pyFadugtStoVIbbNNDBXi0hX2Jamj2PWTbgX644%3d" H 4700 5650 60  0001 C CNN "Source1-DataPage"
+F 6 "78-SI4554DY-T1-GE3 " H 4700 5650 60  0001 C CNN "Source-1-PN"
+F 7 "0.47 " H 4700 5650 60  0001 C CNN "Source-1-P/100"
+F 8 "SI4554DY-T1-GE3" H 4700 5650 60  0001 C CNN "MfgPN"
+	1    4700 5650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 7400 U4
+U 2 1 566D683B
+P 8000 6150
+F 0 "U4" H 7950 6250 60  0000 C CNN
+F 1 "CD74AC00" H 7940 6130 60  0000 C CNN
+F 2 "SOIC-14" H 7945 6020 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74ac00.pdf" H 8000 6150 60  0001 C CNN
+F 4 "Mouser" H 8000 6150 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Texas-Instruments/CD74AC00M96/?qs=sGAEpiMZZMtMa9lbYwD6ZFfNaxHsgUwatKoMTvYnZbM%3d" H 8000 6150 60  0001 C CNN "Source-1-DataPage"
+F 6 "595-CD74AC00M96 " H 8000 6150 60  0001 C CNN "Source-1-PN"
+F 7 "0.308 " H 8000 6150 60  0001 C CNN "Source-1-P/100"
+F 8 "CD74AC00M96" H 8000 6150 60  0001 C CNN "MfgPN"
+	2    8000 6150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 7400 U4
+U 1 1 566D68A8
+P 8150 5350
+F 0 "U4" H 8100 5450 60  0000 C CNN
+F 1 "CD74AC00" H 8100 5340 60  0000 C CNN
+F 2 "SOIC-14" H 8100 5240 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74ac00.pdf" H 8150 5350 60  0001 C CNN
+F 4 "Mouser" H 8150 5350 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Texas-Instruments/CD74AC00M96/?qs=sGAEpiMZZMtMa9lbYwD6ZFfNaxHsgUwatKoMTvYnZbM%3d" H 8150 5350 60  0001 C CNN "Source-1-DataPage"
+F 6 "595-CD74AC00M96 " H 8150 5350 60  0001 C CNN "Source-1-PN"
+F 7 "0.308 " H 8150 5350 60  0001 C CNN "Source-1-P/100"
+F 8 "CD74AC00M96" H 8150 5350 60  0001 C CNN "MfgPN"
+	1    8150 5350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 7400 U4
+U 3 1 566D68D1
+P 7950 4600
+F 0 "U4" H 7900 4700 60  0000 C CNN
+F 1 "CD74AC00" H 7905 4585 60  0000 C CNN
+F 2 "SOIC-14" H 7900 4485 60  0000 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cd74ac00.pdf" H 7950 4600 60  0001 C CNN
+F 4 "Mouser" H 7950 4600 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Texas-Instruments/CD74AC00M96/?qs=sGAEpiMZZMtMa9lbYwD6ZFfNaxHsgUwatKoMTvYnZbM%3d" H 7950 4600 60  0001 C CNN "Source-1-DataPage"
+F 6 "595-CD74AC00M96 " H 7950 4600 60  0001 C CNN "Source-1-PN"
+F 7 "0.308 " H 7950 4600 60  0001 C CNN "Source-1-P/100"
+F 8 "CD74AC00M96" H 7950 4600 60  0001 C CNN "MfgPN"
+	3    7950 4600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L HARDWARE H1
+U 1 1 566DD675
+P 10800 5150
+F 0 "H1" H 10750 5220 50  0000 L CNN
+F 1 "DIP8 Socket" H 10800 5150 40  0000 C CNN
+F 2 "" H 10800 5150 60  0000 C CNN
+F 3 "http://portal.fciconnect.com/Comergent/en/US/adirect/fci;jsessionid=54EA96F75D75FA6B5EE573B8E2802921?cmd=catProductDetail&entryPoint=adirect&messageType=catProductDetail&showAddButton=true&productID=DILB8P223TLF" H 10800 5150 60  0001 C CNN
+F 4 "Mouser" H 10800 5150 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/FCI/DILB8P-223TLF/?qs=sGAEpiMZZMs%2fSh%2fkjph1trsk3O0a2elqycTEeDCVfAg%3d" H 10800 5150 60  0001 C CNN "Source-1-DataPage"
+F 6 "649-DILB8P223TLF " H 10800 5150 60  0001 C CNN "Source-1-PN"
+F 7 "0.108 " H 10800 5150 60  0001 C CNN "Source-1-P/100"
+F 8 "DILB8P-223TLF" H 10800 5150 60  0001 C CNN "MfgPN"
+	1    10800 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L HARDWARE H2
+U 1 1 566DD738
+P 10800 5450
+F 0 "H2" H 10750 5520 50  0000 L CNN
+F 1 "1/4\" Jack Nut" H 10800 5450 32  0000 C CNN
+F 2 "" H 10800 5450 60  0000 C CNN
+F 3 "http://www.neutrik.us/en-us/plugs-jacks/jack-accessories/nrj-nut-b" H 10800 5450 60  0001 C CNN
+F 4 "Mouser" H 10800 5450 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/Search/ProductDetail.aspx?qs=S12Y1JoqO2A%2fB2tjq8cO2w%3d%3d" H 10800 5450 60  0001 C CNN "Source-1-DataPage"
+F 6 "550-1005 " H 10800 5450 60  0001 C CNN "Source-1-PN"
+F 7 "0.10 " H 10800 5450 60  0001 C CNN "Source-1-P/100"
+F 8 "NRJ-NUT-B" H 10800 5450 60  0001 C CNN "MfgPN"
+	1    10800 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L HARDWARE H3
+U 1 1 566DDA2F
+P 10800 5750
+F 0 "H3" H 10750 5820 50  0000 L CNN
+F 1 "PCB" H 10800 5730 40  0000 C CNN
+F 2 "" H 10800 5750 60  0000 C CNN
+F 3 "~" H 10800 5750 60  0001 C CNN
+F 4 "~" H 10800 5750 60  0001 C CNN "Source-1"
+F 5 "~" H 10800 5750 60  0001 C CNN "Source-1-DataPage"
+F 6 "~" H 10800 5750 60  0001 C CNN "Source-1-PN"
+F 7 "3.00" H 10800 5750 60  0001 C CNN "Source-1-P/100"
+F 8 "~" H 10800 5750 60  0001 C CNN "MfgPN"
+	1    10800 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAP_ELEC C4
+U 1 1 5689B8ED
+P 3900 2820
+F 0 "C4" H 3950 2920 50  0000 L CNN
+F 1 "100uF" H 3950 2720 50  0000 L CNN
+F 2 "c_elec_6.3x5.7" H 4080 2670 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/315/ABA0000CE2-40801.pdf" H 3900 2820 60  0001 C CNN
+F 4 "Mouser" H 3900 2820 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Panasonic/EEE-1EA101XP/?qs=%2fha2pyFadujOPgKJGMGECUsaH1YVAJGqPL3pZU3peYE%3d" H 3900 2820 60  0001 C CNN "Source-1-DataPage"
+F 6 "667-EEE-1EA101XP " H 3900 2820 60  0001 C CNN "Source-1-PN"
+F 7 "0.174 " H 3900 2820 60  0001 C CNN "Source-1-P/100"
+F 8 "EEE-1EA101XP" H 3900 2820 60  0001 C CNN "MfgPN"
+	1    3900 2820
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAP_ELEC C10
+U 1 1 5689B95F
+P 2850 4700
+F 0 "C10" V 2800 4430 50  0000 L CNN
+F 1 "100uF" V 2910 4400 50  0000 L CNN
+F 2 "c_elec_6.3x5.7" V 2990 4550 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/315/ABA0000CE2-40801.pdf" H 2850 4700 60  0001 C CNN
+F 4 "Mouser" H 2850 4700 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Panasonic/EEE-1EA101XP/?qs=%2fha2pyFadujOPgKJGMGECUsaH1YVAJGqPL3pZU3peYE%3d" H 2850 4700 60  0001 C CNN "Source-1-DataPage"
+F 6 "667-EEE-1EA101XP " H 2850 4700 60  0001 C CNN "Source-1-PN"
+F 7 "0.174 " H 2850 4700 60  0001 C CNN "Source-1-P/100"
+F 8 "EEE-1EA101XP" H 2850 4700 60  0001 C CNN "MfgPN"
+	1    2850 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L C C16
+U 1 1 568A1172
+P 8180 3620
+F 0 "C16" H 8190 3690 40  0000 L CNN
+F 1 "0.1uF" H 8186 3535 40  0000 L CNN
+F 2 "c_0603" H 8280 3480 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 8180 3620 60  0001 C CNN
+F 4 "Mouser" H 8180 3620 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kemet/C0603C104K3RAC7411/?qs=sGAEpiMZZMs0AnBnWHyRQDE3Md0GeJarI3X5xjtcGYw%3d" H 8180 3620 60  0001 C CNN "Source-1-DataPage"
+F 6 "80-C0603104K3RAC7411 " H 8180 3620 60  0001 C CNN "Source-1-PN"
+F 7 "0.02 " H 8180 3620 60  0001 C CNN "Source-1-P/100"
+F 8 "C0603C104K3RAC7411" H 8180 3620 60  0001 C CNN "MfgPN"
+	1    8180 3620
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR028
+U 1 1 568A118D
+P 8180 3880
+F 0 "#PWR028" H 8180 3880 40  0001 C CNN
+F 1 "GND" H 8280 3830 40  0000 C CNN
+F 2 "~" H 8180 3880 60  0000 C CNN
+F 3 "~" H 8180 3880 60  0000 C CNN
+	1    8180 3880
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C15
+U 1 1 568A135E
+P 9700 3250
+F 0 "C15" H 9710 3320 40  0000 L CNN
+F 1 "0.1uF" H 9706 3165 40  0000 L CNN
+F 2 "c_0603" H 9795 3115 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 9700 3250 60  0001 C CNN
+F 4 "Mouser" H 9700 3250 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kemet/C0603C104K3RAC7411/?qs=sGAEpiMZZMs0AnBnWHyRQDE3Md0GeJarI3X5xjtcGYw%3d" H 9700 3250 60  0001 C CNN "Source-1-DataPage"
+F 6 "80-C0603104K3RAC7411 " H 9700 3250 60  0001 C CNN "Source-1-PN"
+F 7 "0.02 " H 9700 3250 60  0001 C CNN "Source-1-P/100"
+F 8 "C0603C104K3RAC7411" H 9700 3250 60  0001 C CNN "MfgPN"
+	1    9700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR029
+U 1 1 568A138E
+P 9700 3480
+F 0 "#PWR029" H 9700 3480 40  0001 C CNN
+F 1 "GND" H 9800 3430 40  0000 C CNN
+F 2 "~" H 9700 3480 60  0000 C CNN
+F 3 "~" H 9700 3480 60  0000 C CNN
+	1    9700 3480
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR030
+U 1 1 568A1958
+P 9960 3040
+F 0 "#PWR030" H 9960 3040 40  0001 C CNN
+F 1 "GND" H 9860 2990 40  0000 C CNN
+F 2 "~" H 9960 3040 60  0000 C CNN
+F 3 "~" H 9960 3040 60  0000 C CNN
+	1    9960 3040
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED_RT D1
+U 1 1 568A204C
+P 1070 1770
+F 0 "D1" H 1060 1860 40  0000 C CNN
+F 1 "LED_RT" H 1070 1670 40  0000 C CNN
+F 2 "LED_RT_100" H 1070 1620 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/244/SSF-LXH100HD-01-55037.pdf" H 1070 1770 60  0001 C CNN
+F 4 "Mouser" H 1070 1770 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Lumex/SSF-LXH100HD-01/?qs=sGAEpiMZZMtilyJihmhKq8Uk9pte688Vs9UseWONd%252bY%3d" H 1070 1770 60  0001 C CNN "Source-1-DataPage"
+F 6 "696-SSFLXH100HD01 " H 1070 1770 60  0001 C CNN "Source-1-PN"
+F 7 "0.33 " H 1070 1770 60  0001 C CNN "Source-1-P/100"
+F 8 "SSF-LXH100HD-01" H 1070 1770 60  0001 C CNN "MfgPN"
+F 9 "Power" H 1080 2000 40  0000 C CNN "Name"
+	1    1070 1770
+	0    -1   1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 568A20B7
+P 1500 1820
+F 0 "R2" V 1580 1820 40  0000 C CNN
+F 1 "820" V 1507 1821 40  0000 C CNN
+F 2 "r_1206" V 1430 1820 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/315/AOA0000CE4-64075.pdf" H 1500 1820 30  0001 C CNN
+F 4 "Mouser" V 1500 1820 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Panasonic/ERJ-P08J821V/?qs=sGAEpiMZZMu61qfTUdNhG4N%252bbAgO2H570MU5f3NDg8k%3d" V 1500 1820 60  0001 C CNN "Source-1-DataPage"
+F 6 "667-ERJ-P08J821V " V 1500 1820 60  0001 C CNN "Source-1-PN"
+F 7 "0.041" V 1500 1820 60  0001 C CNN "Source-1-P/100"
+F 8 "ERJ-P08J821V" V 1500 1820 60  0001 C CNN "MfgPN"
+	1    1500 1820
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR031
+U 1 1 568A2311
+P 1070 2080
+F 0 "#PWR031" H 1070 2080 40  0001 C CNN
+F 1 "GND" H 1170 2030 40  0000 C CNN
+F 2 "~" H 1070 2080 60  0000 C CNN
+F 3 "~" H 1070 2080 60  0000 C CNN
+	1    1070 2080
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 568AC903
+P 9890 1100
+F 0 "R5" V 9930 1300 40  0000 C CNN
+F 1 "270" V 9897 1101 40  0000 C CNN
+F 2 "SM0603_Resistor" V 9820 1050 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 9890 1100 30  0001 C CNN
+F 4 "Mouser" V 9890 1100 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay-Dale/CRCW0603270RJNEB/?qs=sGAEpiMZZMu61qfTUdNhG2DpbjADlD3G0CmTHTv0vzE%3d" V 9890 1100 60  0001 C CNN "Source-1-DataPage"
+F 6 "71-CRCW0603270RJNEB " V 9890 1100 60  0001 C CNN "Source-1-PN"
+F 7 "0.008 " V 9890 1100 60  0001 C CNN "Source-1-P/100"
+F 8 "CRCW0603270RJNEB" V 9890 1100 60  0001 C CNN "MfgPN"
+	1    9890 1100
+	0    1    -1   0   
+$EndComp
+$Comp
+L 5V #PWR032
+U 1 1 568AF5D2
+P 10020 1600
+F 0 "#PWR032" H 10020 1700 40  0001 C CNN
+F 1 "5V" H 10020 1725 40  0000 C CNN
+F 2 "~" H 10020 1600 60  0000 C CNN
+F 3 "~" H 10020 1600 60  0000 C CNN
+	1    10020 1600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED_R/G D4
+U 1 1 568AFB2E
+P 8030 1090
+F 0 "D4" H 8040 1200 40  0000 C CNN
+F 1 "R/G" H 7895 1045 40  0000 C CNN
+F 2 "LED_T1_BiPolar_100" H 7990 990 30  0000 C CNN
+F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1995935.pdf" H 8030 1090 60  0001 C CNN
+F 4 "Jameco" H 8030 1090 60  0001 C CNN "Source-1"
+F 5 "http://www.jameco.com/1/1/6397-ltl-14chj-3mm-bi-polar-indicator-led-lamp-lens-white-diffused.html" H 8030 1090 60  0001 C CNN "Source-1-DataPage"
+F 6 "1995935" H 8030 1090 60  0001 C CNN "Source-1-PN"
+F 7 "0.19" H 8030 1090 60  0001 C CNN "Source-1-P/100"
+F 8 "LTL-14CHJ" H 8030 1090 60  0001 C CNN "MfgPN"
+	1    8030 1090
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C18
+U 1 1 568B18A9
+P 9990 6630
+F 0 "C18" H 10000 6700 40  0000 L CNN
+F 1 "0.1uF" H 9996 6545 40  0000 L CNN
+F 2 "c_0603" H 10080 6500 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 9990 6630 60  0001 C CNN
+F 4 "Mouser" H 9990 6630 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kemet/C0603C104K3RAC7411/?qs=sGAEpiMZZMs0AnBnWHyRQDE3Md0GeJarI3X5xjtcGYw%3d" H 9990 6630 60  0001 C CNN "Source-1-DataPage"
+F 6 "80-C0603104K3RAC7411 " H 9990 6630 60  0001 C CNN "Source-1-PN"
+F 7 "0.02 " H 9990 6630 60  0001 C CNN "Source-1-P/100"
+F 8 "C0603C104K3RAC7411" H 9990 6630 60  0001 C CNN "MfgPN"
+F 9 "(P5)" H 10060 6770 40  0000 C CNN "Name"
+	1    9990 6630
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C17
+U 1 1 568B1FBD
+P 6310 1100
+F 0 "C17" H 6320 1170 40  0000 L CNN
+F 1 "0.1uF" H 6316 1015 40  0000 L CNN
+F 2 "c_0603" H 6405 960 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 6310 1100 60  0001 C CNN
+F 4 "Mouser" H 6310 1100 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kemet/C0603C104K3RAC7411/?qs=sGAEpiMZZMs0AnBnWHyRQDE3Md0GeJarI3X5xjtcGYw%3d" H 6310 1100 60  0001 C CNN "Source-1-DataPage"
+F 6 "80-C0603104K3RAC7411 " H 6310 1100 60  0001 C CNN "Source-1-PN"
+F 7 "0.02 " H 6310 1100 60  0001 C CNN "Source-1-P/100"
+F 8 "C0603C104K3RAC7411" H 6310 1100 60  0001 C CNN "MfgPN"
+	1    6310 1100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR033
+U 1 1 568B1FD7
+P 6310 1300
+F 0 "#PWR033" H 6310 1300 40  0001 C CNN
+F 1 "GND" H 6410 1250 40  0000 C CNN
+F 2 "~" H 6310 1300 60  0000 C CNN
+F 3 "~" H 6310 1300 60  0000 C CNN
+	1    6310 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LED_SMT D2
+U 1 1 568B2C1C
+P 8040 1910
+F 0 "D2" H 8020 1800 40  0000 C CNN
+F 1 "Green" H 7890 1950 40  0000 C CNN
+F 2 "SM0603_Diode" H 7940 2000 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/216/APT1608CGCK-24002.pdf" H 8040 1910 60  0001 C CNN
+F 4 "Mouser" H 8040 1910 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kingbright/APT1608CGCK/?qs=%2fha2pyFaduixH3bVVa9cqFGd5mAjsqkZ5RJ8g3dhOSWHM0u43ImBmA%3d%3d" H 8040 1910 60  0001 C CNN "Source-1-DataPage"
+F 6 "604-APT1608CGCK" H 8040 1910 60  0001 C CNN "Source-1-PN"
+F 7 "0.079 " H 8040 1910 60  0001 C CNN "Source-1-P/100"
+F 8 "APT1608CGCK" H 8040 1910 60  0001 C CNN "MfgPN"
+	1    8040 1910
+	1    0    0    1   
+$EndComp
+$Comp
+L LED_SMT D5
+U 1 1 568B2C2B
+P 8040 680
+F 0 "D5" H 8020 580 40  0000 C CNN
+F 1 "Red" H 7920 720 40  0000 C CNN
+F 2 "SM0603_Diode" H 7940 770 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/216/AP1608SRCPRV-33864.pdf" H 8040 680 60  0001 C CNN
+F 4 "Mouser" H 8040 680 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kingbright/AP1608SRCPRV/?qs=%2fha2pyFadui38EA%252bNN%2fawIE%252bwu%252baoJk%2f0jkiDtHeBWF5uWLpL4%252bIDw%3d%3d" H 8040 680 60  0001 C CNN "Source-1-DataPage"
+F 6 "604-AP1608SRCPRV " H 8040 680 60  0001 C CNN "Source-1-PN"
+F 7 "0.065 " H 8040 680 60  0001 C CNN "Source-1-P/100"
+F 8 "AP1608SRCPRV" H 8040 680 60  0001 C CNN "MfgPN"
+	1    8040 680 
+	1    0    0    1   
+$EndComp
+$Comp
+L R R7
+U 1 1 568B414D
+P 9080 900
+F 0 "R7" V 9120 1100 40  0000 C CNN
+F 1 "270" V 9087 901 40  0000 C CNN
+F 2 "SM0603_Resistor" V 9010 850 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 9080 900 30  0001 C CNN
+F 4 "Mouser" V 9080 900 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay-Dale/CRCW0603270RJNEB/?qs=sGAEpiMZZMu61qfTUdNhG2DpbjADlD3G0CmTHTv0vzE%3d" V 9080 900 60  0001 C CNN "Source-1-DataPage"
+F 6 "71-CRCW0603270RJNEB " V 9080 900 60  0001 C CNN "Source-1-PN"
+F 7 "0.008 " V 9080 900 60  0001 C CNN "Source-1-P/100"
+F 8 "CRCW0603270RJNEB" V 9080 900 60  0001 C CNN "MfgPN"
+	1    9080 900 
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R9
+U 1 1 568B419A
+P 8510 1510
+F 0 "R9" V 8590 1510 40  0000 C CNN
+F 1 "270" V 8517 1511 40  0000 C CNN
+F 2 "SM0603_Resistor" V 8440 1510 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 8510 1510 30  0001 C CNN
+F 4 "Mouser" V 8510 1510 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay-Dale/CRCW0603270RJNEB/?qs=sGAEpiMZZMu61qfTUdNhG2DpbjADlD3G0CmTHTv0vzE%3d" V 8510 1510 60  0001 C CNN "Source-1-DataPage"
+F 6 "71-CRCW0603270RJNEB " V 8510 1510 60  0001 C CNN "Source-1-PN"
+F 7 "0.008 " V 8510 1510 60  0001 C CNN "Source-1-P/100"
+F 8 "CRCW0603270RJNEB" V 8510 1510 60  0001 C CNN "MfgPN"
+	1    8510 1510
+	0    1    -1   0   
+$EndComp
+Text Notes 598  7344 0    42   ~ 0
+Status/IO Options:\nSt/IO-4None: For no Status or I/O, do not install R5, R6, R7, R8, R9, R10, R11, R13,  D2, D3, D4, D5, C17.\nSt/IO-4A: For simple on board dual LED status outputs. Install D2, D5, R8, R11, R12, R13. Do not install C16, C17, R3, P6.  \nSt/IO-4B: Same as 4A with off board LEDs. Install P5, R5, R7, R12, R13. Do not install D2, D5, R8, R11, C16, C17, R3, P6.\nSt/IO-4C: Single on board Bi-Polar Status LED, potentially indicating Run, Stop, & Wait conditions, (can output Green/Red/Yellow). Install D4, R10.  Do not install D3, D5, R9, R11, C17.\nSt/IO-4D: Dual I/O signals. Install P5, R7, R5, R12, R13, (resistor values may vary).  Do not install R3.  For very low speed Inputs also install C16, C17.\nSt/IO-4E: Inverted signal indicator. In the I/O configuration installing D3, R9 will provide an inverted output indication of the input signal from P5-5 or the output Status signal. \nSt/IO Notes: For above, components listed as "Install" or "Do not to install" provide minimum configurations. Other components may be installed (or not) to allow other mixed configurations. 
+Text Notes 9130 1460 0    40   ~ 8
+St/IO-4A\nSt/IO-4B\nSt/IO-4C\nSt/IO-4D\nSt/IO-4E
+$Comp
+L R R11
+U 1 1 568DAD91
+P 8510 680
+F 0 "R11" V 8590 680 40  0000 C CNN
+F 1 "270" V 8517 681 40  0000 C CNN
+F 2 "SM0603_Resistor" V 8440 680 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 8510 680 30  0001 C CNN
+F 4 "Mouser" V 8510 680 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay-Dale/CRCW0603270RJNEB/?qs=sGAEpiMZZMu61qfTUdNhG2DpbjADlD3G0CmTHTv0vzE%3d" V 8510 680 60  0001 C CNN "Source-1-DataPage"
+F 6 "71-CRCW0603270RJNEB " V 8510 680 60  0001 C CNN "Source-1-PN"
+F 7 "0.008 " V 8510 680 60  0001 C CNN "Source-1-P/100"
+F 8 "CRCW0603270RJNEB" V 8510 680 60  0001 C CNN "MfgPN"
+	1    8510 680 
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R6
+U 1 1 568DAD9C
+P 9490 1000
+F 0 "R6" V 9530 1200 40  0000 C CNN
+F 1 "270" V 9497 1001 40  0000 C CNN
+F 2 "SM0603_Resistor" V 9420 950 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 9490 1000 30  0001 C CNN
+F 4 "Mouser" V 9490 1000 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay-Dale/CRCW0603270RJNEB/?qs=sGAEpiMZZMu61qfTUdNhG2DpbjADlD3G0CmTHTv0vzE%3d" V 9490 1000 60  0001 C CNN "Source-1-DataPage"
+F 6 "71-CRCW0603270RJNEB " V 9490 1000 60  0001 C CNN "Source-1-PN"
+F 7 "0.008 " V 9490 1000 60  0001 C CNN "Source-1-P/100"
+F 8 "CRCW0603270RJNEB" V 9490 1000 60  0001 C CNN "MfgPN"
+	1    9490 1000
+	0    1    -1   0   
+$EndComp
+$Comp
+L R R8
+U 1 1 568DADA7
+P 8510 1910
+F 0 "R8" V 8590 1910 40  0000 C CNN
+F 1 "270" V 8517 1911 40  0000 C CNN
+F 2 "SM0603_Resistor" V 8440 1910 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 8510 1910 30  0001 C CNN
+F 4 "Mouser" V 8510 1910 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay-Dale/CRCW0603270RJNEB/?qs=sGAEpiMZZMu61qfTUdNhG2DpbjADlD3G0CmTHTv0vzE%3d" V 8510 1910 60  0001 C CNN "Source-1-DataPage"
+F 6 "71-CRCW0603270RJNEB " V 8510 1910 60  0001 C CNN "Source-1-PN"
+F 7 "0.008 " V 8510 1910 60  0001 C CNN "Source-1-P/100"
+F 8 "CRCW0603270RJNEB" V 8510 1910 60  0001 C CNN "MfgPN"
+	1    8510 1910
+	0    1    -1   0   
+$EndComp
+$Comp
+L LED_SMT D3
+U 1 1 568E2A5D
+P 8040 1510
+F 0 "D3" H 8020 1410 40  0000 C CNN
+F 1 "Green" H 7890 1550 40  0000 C CNN
+F 2 "SM0603_Diode" H 7940 1600 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/216/APT1608CGCK-24002.pdf" H 8040 1510 60  0001 C CNN
+F 4 "Mouser" H 8040 1510 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kingbright/APT1608CGCK/?qs=%2fha2pyFaduixH3bVVa9cqFGd5mAjsqkZ5RJ8g3dhOSWHM0u43ImBmA%3d%3d" H 8040 1510 60  0001 C CNN "Source-1-DataPage"
+F 6 "604-APT1608CGCK" H 8040 1510 60  0001 C CNN "Source-1-PN"
+F 7 "0.079 " H 8040 1510 60  0001 C CNN "Source-1-P/100"
+F 8 "APT1608CGCK" H 8040 1510 60  0001 C CNN "MfgPN"
+	1    8040 1510
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7950 2400 9060 2400
+Wire Wire Line
+	5000 2750 5000 2950
+Connection ~ 5000 2300
+Wire Wire Line
+	5000 2250 5000 2350
+Wire Wire Line
+	10400 2700 10400 2860
+Wire Wire Line
+	10400 2390 10400 2500
+Wire Wire Line
+	3400 3020 3400 3070
+Wire Wire Line
+	3900 3020 3900 3070
+Connection ~ 3900 2570
+Wire Wire Line
+	4100 2570 4100 2520
+Connection ~ 3400 2570
+Wire Wire Line
+	3900 2570 3900 2620
+Wire Wire Line
+	3400 2570 3400 2620
+Wire Wire Line
+	3300 2570 4100 2570
+Connection ~ 1550 2870
+Wire Wire Line
+	1550 2770 1450 2770
+Wire Wire Line
+	1550 2870 1550 2770
+Wire Wire Line
+	1450 2870 1750 2870
+Wire Wire Line
+	1750 2870 1750 3070
+Wire Wire Line
+	2400 3020 2400 3070
+Wire Wire Line
+	2050 3020 2050 3070
+Connection ~ 2400 2570
+Connection ~ 2500 2570
+Wire Wire Line
+	2400 2570 2400 2620
+Connection ~ 1890 2570
+Wire Wire Line
+	2500 2570 2500 890 
+Wire Wire Line
+	2050 2570 2050 2620
+Wire Wire Line
+	1890 2570 1890 2220
+Wire Wire Line
+	1450 2570 2500 2570
+Wire Wire Line
+	2140 1970 2140 2010
+Wire Wire Line
+	3400 890  3400 1600
+Wire Wire Line
+	5250 2800 5250 2950
+Wire Wire Line
+	5250 2300 5000 2300
+Wire Wire Line
+	8550 4700 9190 4700
+Wire Wire Line
+	9060 4500 8550 4500
+Connection ~ 9060 4500
+Wire Wire Line
+	9060 2400 9060 6350
+Wire Wire Line
+	7550 5350 7550 5750
+Wire Wire Line
+	9060 6890 9060 6850
+Wire Wire Line
+	650  6150 1150 6150
+Wire Wire Line
+	2150 6150 4200 6150
+Wire Wire Line
+	2900 5500 4200 5500
+Wire Wire Line
+	4200 5500 4200 5800
+Connection ~ 4200 5700
+Wire Wire Line
+	2150 5500 2150 5800
+Connection ~ 2150 5600
+Connection ~ 2150 5700
+Wire Wire Line
+	3300 1570 3900 1570
+Wire Wire Line
+	3900 1570 3900 1300
+Wire Wire Line
+	3800 1470 4250 1470
+Wire Wire Line
+	4000 1470 4000 1300
+Wire Wire Line
+	3800 1470 3800 1300
+Connection ~ 4000 1470
+Wire Wire Line
+	3400 2021 3400 2000
+Connection ~ 3900 1570
+Connection ~ 3400 1570
+Wire Wire Line
+	2500 890  2650 890 
+Wire Wire Line
+	3150 890  3400 890 
+Wire Wire Line
+	2150 5150 4200 5150
+Wire Wire Line
+	3100 4450 3100 5150
+Connection ~ 3100 5150
+Wire Wire Line
+	3100 6150 3100 6240
+Connection ~ 3100 6150
+Wire Wire Line
+	3050 4700 3150 4700
+Connection ~ 3100 4700
+Wire Wire Line
+	2500 4825 2500 4700
+Wire Wire Line
+	3600 4820 3600 4700
+Wire Wire Line
+	5750 4150 5750 4350
+Connection ~ 6100 4150
+Wire Wire Line
+	3300 5500 3300 5650
+Wire Wire Line
+	3400 5280 3400 5650
+Wire Wire Line
+	3500 5280 3500 5650
+Wire Wire Line
+	3600 5500 3600 5650
+Wire Wire Line
+	7950 2700 9190 2700
+Wire Wire Line
+	9900 3980 10120 3980
+Wire Wire Line
+	9900 3880 9900 4110
+Wire Wire Line
+	10120 3880 9900 3880
+Connection ~ 9900 3980
+Wire Wire Line
+	9560 3780 10120 3780
+Wire Wire Line
+	6310 900  8830 900 
+Wire Wire Line
+	6640 900  6640 1680
+Wire Wire Line
+	650  4000 5300 4000
+Wire Wire Line
+	5300 4000 5300 4600
+Wire Wire Line
+	650  4000 650  6150
+Wire Wire Line
+	7950 2800 8900 2800
+Wire Wire Line
+	9190 2700 9190 5250
+Wire Wire Line
+	3600 4700 3550 4700
+Wire Wire Line
+	5750 4150 6150 4150
+Wire Wire Line
+	4250 1470 4250 1520
+Wire Wire Line
+	3600 4450 4270 4450
+Wire Wire Line
+	2500 4700 2650 4700
+Wire Wire Line
+	5770 6600 6150 6600
+Wire Wire Line
+	7950 2600 10400 2600
+Connection ~ 9960 2600
+Connection ~ 2500 1570
+Connection ~ 2050 2570
+Wire Wire Line
+	2140 1570 2500 1570
+Wire Wire Line
+	7250 5900 7000 5900
+Wire Wire Line
+	9060 6250 8600 6250
+Wire Wire Line
+	8850 5750 8850 6050
+Wire Wire Line
+	5470 5150 5200 5150
+Wire Wire Line
+	1150 5150 800  5150
+Wire Wire Line
+	800  5150 800  4150
+Wire Wire Line
+	800  4150 5150 4150
+Wire Wire Line
+	5150 4850 5700 4850
+Wire Wire Line
+	5470 5900 5700 5900
+Wire Wire Line
+	5470 5150 5470 5900
+Wire Wire Line
+	5700 6150 5200 6150
+Wire Wire Line
+	5300 4600 5700 4600
+Wire Wire Line
+	5150 4150 5150 4850
+Wire Wire Line
+	7250 5900 7250 4600
+Wire Wire Line
+	7000 4600 7350 4600
+Wire Wire Line
+	7000 4850 7400 4850
+Wire Wire Line
+	7400 4850 7400 6150
+Connection ~ 7400 6150
+Connection ~ 7250 4600
+Connection ~ 9190 4700
+Wire Wire Line
+	8850 6050 8600 6050
+Wire Wire Line
+	8750 5450 8750 5250
+Wire Wire Line
+	7550 5750 8850 5750
+Wire Wire Line
+	9560 2500 9560 3780
+Connection ~ 4200 5600
+Connection ~ 4200 5500
+Wire Wire Line
+	7950 2500 9560 2500
+Wire Wire Line
+	2900 3070 2900 2870
+Wire Wire Line
+	6550 4150 6950 4150
+Connection ~ 6600 4150
+Wire Wire Line
+	2900 1870 2900 2070
+Wire Wire Line
+	5770 6600 5770 6780
+Connection ~ 1890 2220
+Connection ~ 4270 4450
+Wire Wire Line
+	7400 6150 7000 6150
+Connection ~ 6100 6600
+Wire Wire Line
+	6550 6600 7020 6600
+Connection ~ 6600 6600
+Wire Wire Line
+	8900 3930 10120 3930
+Wire Wire Line
+	8180 3820 8180 3880
+Wire Wire Line
+	9560 3050 9700 3050
+Connection ~ 9560 3050
+Wire Wire Line
+	8750 5250 9190 5250
+Wire Wire Line
+	1500 2070 1500 2570
+Connection ~ 1500 2570
+Wire Wire Line
+	1500 1570 1070 1570
+Wire Wire Line
+	1070 1970 1070 2080
+Connection ~ 9060 6250
+Wire Wire Line
+	9700 3450 9700 3480
+Wire Wire Line
+	9960 3000 9960 3040
+Connection ~ 6640 1200
+Wire Wire Line
+	8760 1910 9640 1910
+Wire Wire Line
+	9330 900  10350 900 
+Wire Wire Line
+	7840 1300 9240 1300
+Wire Wire Line
+	9370 6430 10290 6430
+Connection ~ 9990 6430
+Wire Wire Line
+	9370 6830 10290 6830
+Connection ~ 9990 6830
+Connection ~ 6640 900 
+Wire Wire Line
+	8760 900  8760 680 
+Wire Wire Line
+	6640 1680 8900 1680
+Connection ~ 6640 1400
+Wire Wire Line
+	8760 1090 8760 1510
+Connection ~ 8760 1300
+$Comp
+L CONN_5 P5
+U 1 1 5694975E
+P 10750 1100
+F 0 "P5" V 10700 1100 50  0000 C CNN
+F 1 "Status I/O" V 10920 1100 50  0000 C CNN
+F 2 "SIL-5-RT" V 10780 1100 60  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/154/bus-12-050-356030.pdf" H 10750 1100 60  0001 C CNN
+F 4 "Mouser" V 10750 1100 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ds/2/154/bus-12-050-356030.pdf" V 10750 1100 60  0001 C CNN "Source-1-DataPage"
+F 6 "649-68016-405HLF " V 10750 1100 60  0001 C CNN "Source-1-PN"
+F 7 "0.164 " V 10750 1100 60  0001 C CNN "Source-1-P/100"
+F 8 "68016-405HLF" V 10750 1100 60  0001 C CNN "MfgPN"
+	1    10750 1100
+	1    0    0    1   
+$EndComp
+$Comp
+L 5V #PWR034
+U 1 1 569497DE
+P 7780 680
+F 0 "#PWR034" H 7780 780 40  0001 C CNN
+F 1 "5V" H 7780 805 40  0000 C CNN
+F 2 "~" H 7780 680 60  0000 C CNN
+F 3 "~" H 7780 680 60  0000 C CNN
+	1    7780 680 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9740 1000 10350 1000
+Wire Wire Line
+	10140 1100 10350 1100
+Wire Wire Line
+	8260 680  8240 680 
+Wire Wire Line
+	7840 680  7780 680 
+$Comp
+L R R10
+U 1 1 56949D53
+P 8510 1090
+F 0 "R10" V 8590 1090 40  0000 C CNN
+F 1 "270" V 8517 1091 40  0000 C CNN
+F 2 "SM0603_Resistor" V 8440 1090 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 8510 1090 30  0001 C CNN
+F 4 "Mouser" V 8510 1090 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay-Dale/CRCW0603270RJNEB/?qs=sGAEpiMZZMu61qfTUdNhG2DpbjADlD3G0CmTHTv0vzE%3d" V 8510 1090 60  0001 C CNN "Source-1-DataPage"
+F 6 "71-CRCW0603270RJNEB " V 8510 1090 60  0001 C CNN "Source-1-PN"
+F 7 "0.008 " V 8510 1090 60  0001 C CNN "Source-1-P/100"
+F 8 "CRCW0603270RJNEB" V 8510 1090 60  0001 C CNN "MfgPN"
+	1    8510 1090
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	7780 1090 7780 900 
+Wire Wire Line
+	10280 1670 10280 1300
+Wire Wire Line
+	10280 1300 10350 1300
+$Comp
+L GND #PWR035
+U 1 1 56949FC6
+P 10280 1670
+F 0 "#PWR035" H 10280 1670 40  0001 C CNN
+F 1 "GND" H 10180 1620 40  0000 C CNN
+F 2 "~" H 10280 1670 60  0000 C CNN
+F 3 "~" H 10280 1670 60  0000 C CNN
+	1    10280 1670
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 1200 10150 1200
+Wire Wire Line
+	10150 1200 10150 1600
+Wire Wire Line
+	9640 1910 9640 1100
+$Comp
+L 5V #PWR036
+U 1 1 5694A305
+P 7780 1500
+F 0 "#PWR036" H 7780 1600 40  0001 C CNN
+F 1 "5V" H 7780 1625 40  0000 C CNN
+F 2 "~" H 7780 1500 60  0000 C CNN
+F 3 "~" H 7780 1500 60  0000 C CNN
+	1    7780 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L 5V #PWR037
+U 1 1 5694A30B
+P 7790 1910
+F 0 "#PWR037" H 7790 2010 40  0001 C CNN
+F 1 "5V" H 7790 2035 40  0000 C CNN
+F 2 "~" H 7790 1910 60  0000 C CNN
+F 3 "~" H 7790 1910 60  0000 C CNN
+	1    7790 1910
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8260 1510 8240 1510
+Wire Wire Line
+	9240 1300 9240 1000
+Connection ~ 8760 900 
+Wire Wire Line
+	7840 1510 7780 1510
+Wire Wire Line
+	7780 1510 7780 1500
+Wire Wire Line
+	7840 1910 7790 1910
+Wire Wire Line
+	8260 1910 8240 1910
+Wire Wire Line
+	8260 1090 8230 1090
+Text Label 7020 1680 2    60   ~ 0
+Status
+Wire Wire Line
+	10150 1600 10020 1600
+Text Notes 7840 1900 0    60   ~ 0
+"A"
+Text Notes 7820 670  0    60   ~ 0
+"B"
+Text Notes 7830 1490 0    60   ~ 0
+"C"
+Text Notes 7830 1070 0    60   ~ 0
+"D"
+Wire Wire Line
+	7780 1090 7830 1090
+Connection ~ 7780 900 
+$Comp
+L CONN_1 PS2
+U 1 1 5699E6CE
+P 1220 1970
+F 0 "PS2" H 1260 1960 40  0000 L CNN
+F 1 "CONN_1" H 1220 2025 30  0001 C CNN
+F 2 "SIL-1" H 1320 1905 30  0000 C CNN
+F 3 "" H 1220 1970 60  0000 C CNN
+F 4 "Alt Pin for D1-C" H 1220 1970 60  0001 C CNN "Name"
+	1    1220 1970
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 PS1
+U 1 1 5699E6E7
+P 1220 1510
+F 0 "PS1" H 1265 1530 40  0000 L CNN
+F 1 "CONN_1" H 1220 1565 30  0001 C CNN
+F 2 "SIL-1" H 1325 1480 30  0000 C CNN
+F 3 "" H 1220 1510 60  0000 C CNN
+F 4 "Alt Pin for D1-A" H 1220 1510 60  0001 C CNN "Name"
+	1    1220 1510
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1070 1570 1070 1510
+$Comp
+L C C19
+U 1 1 5699EC7A
+P 3900 1770
+F 0 "C19" H 3910 1840 40  0000 L CNN
+F 1 "0.1uF" H 3906 1685 40  0000 L CNN
+F 2 "c_0603" H 3995 1635 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 3900 1770 60  0001 C CNN
+F 4 "Mouser" H 3900 1770 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kemet/C0603C104K3RAC7411/?qs=sGAEpiMZZMs0AnBnWHyRQDE3Md0GeJarI3X5xjtcGYw%3d" H 3900 1770 60  0001 C CNN "Source-1-DataPage"
+F 6 "80-C0603104K3RAC7411 " H 3900 1770 60  0001 C CNN "Source-1-PN"
+F 7 "0.02 " H 3900 1770 60  0001 C CNN "Source-1-P/100"
+F 8 "C0603C104K3RAC7411" H 3900 1770 60  0001 C CNN "MfgPN"
+	1    3900 1770
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR038
+U 1 1 5699EC80
+P 3900 2020
+F 0 "#PWR038" H 3900 2020 40  0001 C CNN
+F 1 "GND" H 4000 1970 40  0000 C CNN
+F 2 "~" H 3900 2020 60  0000 C CNN
+F 3 "~" H 3900 2020 60  0000 C CNN
+	1    3900 2020
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 1970 3900 2020
+$Comp
+L C C20
+U 1 1 5699EDAB
+P 9370 6630
+F 0 "C20" H 9380 6700 40  0000 L CNN
+F 1 "0.1uF" H 9376 6545 40  0000 L CNN
+F 2 "c_0603" H 9460 6495 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/212/KEM_C1002_X7R_SMD-357932.pdf" H 9370 6630 60  0001 C CNN
+F 4 "Mouser" H 9370 6630 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Kemet/C0603C104K3RAC7411/?qs=sGAEpiMZZMs0AnBnWHyRQDE3Md0GeJarI3X5xjtcGYw%3d" H 9370 6630 60  0001 C CNN "Source-1-DataPage"
+F 6 "80-C0603104K3RAC7411 " H 9370 6630 60  0001 C CNN "Source-1-PN"
+F 7 "0.02 " H 9370 6630 60  0001 C CNN "Source-1-P/100"
+F 8 "C0603C104K3RAC7411" H 9370 6630 60  0001 C CNN "MfgPN"
+F 9 "(D3)" H 9440 6770 40  0000 C CNN "Name"
+	1    9370 6630
+	1    0    0    -1  
+$EndComp
+Connection ~ 9680 6430
+Connection ~ 9680 6830
+Wire Wire Line
+	9850 6300 9850 6430
+Connection ~ 9850 6430
+Wire Wire Line
+	9850 6920 9850 6830
+Connection ~ 9850 6830
+Text Notes 10550 750  2    100  ~ 20
+Status LEDs & I/O\n
+Text Notes 2994 5961 0    40   ~ 0
+Mtr-1A
+Text Notes 2991 6034 0    40   ~ 0
+Mtr-1B
+Text Notes 8430 3470 0    40   ~ 8
+R/PE-3A
+Wire Wire Line
+	2900 5650 2900 5500
+Wire Wire Line
+	2700 5280 2700 5650
+Connection ~ 2700 5500
+Wire Wire Line
+	2700 5280 3500 5280
+Wire Wire Line
+	2150 5500 2700 5500
+Connection ~ 3400 5280
+Connection ~ 3300 5500
+Connection ~ 3600 5500
+Wire Wire Line
+	8900 1680 8900 2300
+Wire Wire Line
+	8900 2300 7950 2300
+Wire Wire Line
+	8680 2800 8680 3140
+Wire Wire Line
+	8680 3140 8180 3140
+Wire Wire Line
+	8900 3300 8900 3430
+Wire Wire Line
+	8180 3340 9360 3340
+$Comp
+L R R13
+U 1 1 569F5EFF
+P 9360 3050
+F 0 "R13" V 9415 3050 40  0000 C TNN
+F 1 "0k" V 9367 3051 40  0000 C CNN
+F 2 "SM0603_Resistor" V 9290 3050 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 9360 3050 30  0001 C CNN
+F 4 "Mouser" V 9360 3050 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay-Dale/CRCW06030000Z0EB/?qs=sGAEpiMZZMu61qfTUdNhG2DpbjADlD3GPH2VLSi4g08%3d" V 9360 3050 60  0001 C CNN "Source-1-DataPage"
+F 6 "71-CRCW06030000Z0EB " V 9360 3050 60  0001 C CNN "Source-1-PN"
+F 7 "0.008 " V 9360 3050 60  0001 C CNN "Source-1-P/100"
+F 8 "CRCW06030000Z0EB" V 9360 3050 60  0001 C CNN "MfgPN"
+	1    9360 3050
+	-1   0    0    -1  
+$EndComp
+Connection ~ 8900 3340
+$Comp
+L R R12
+U 1 1 569F61BF
+P 8900 3050
+F 0 "R12" V 8955 3050 40  0000 C TNN
+F 1 "0k" V 8907 3051 40  0000 C CNN
+F 2 "SM0603_Resistor" V 8830 3050 30  0000 C CNN
+F 3 "http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf" H 8900 3050 30  0001 C CNN
+F 4 "Mouser" V 8900 3050 60  0001 C CNN "Source-1"
+F 5 "http://www.mouser.com/ProductDetail/Vishay-Dale/CRCW06030000Z0EB/?qs=sGAEpiMZZMu61qfTUdNhG2DpbjADlD3GPH2VLSi4g08%3d" V 8900 3050 60  0001 C CNN "Source-1-DataPage"
+F 6 "71-CRCW06030000Z0EB " V 8900 3050 60  0001 C CNN "Source-1-PN"
+F 7 "0.008 " V 8900 3050 60  0001 C CNN "Source-1-P/100"
+F 8 "CRCW06030000Z0EB" V 8900 3050 60  0001 C CNN "MfgPN"
+	1    8900 3050
+	-1   0    0    -1  
+$EndComp
+Connection ~ 8680 2800
+Wire Wire Line
+	8180 3420 8180 3340
+Connection ~ 8180 3340
+Text Label 9300 3930 0    60   ~ 0
+PEn_y
+Wire Wire Line
+	9360 3340 9360 3300
+Wire Wire Line
+	9360 2800 9360 1910
+Connection ~ 9360 1910
+Text Notes 8430 3630 0    40   ~ 8
+R/PE-3C
+Text Label 9070 1910 0    60   ~ 0
+PEn_z
+$Comp
+L EEW_LOGO H4
+U 1 1 56B86657
+P 10800 6090
+F 0 "H4" H 10660 6240 10  0000 C CNN
+F 1 "EEW_LOGO" H 10910 6240 10  0000 C CNN
+F 2 "EEW_Logo_small" H 10800 5930 20  0000 C CNN
+F 3 "~" H 10800 6090 60  0000 C CNN
+	1    10800 6090
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
