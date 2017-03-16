@@ -1,10 +1,9 @@
 // eew5
 // Maurice Ribble 
-// Jan 19, 2017
+// March 16, 2017
 // Open Source, licensed under Creative Commons Attribution 3.0 License (http://creativecommons.org/licenses/by-sa/3.0/)
 // Compiled with Arduino Software 1.8.1 (http://arduino.cc) plus the attiny module
 // This site explains how to setup tiny: http://highlowtech.org/?p=1695
-
 
 // Here are the steps to loading the firmware:
 //   Set Tools->Board to: ATtiny25/45/85
@@ -52,8 +51,10 @@
 //      - Updated control logic be easier to use
 //      - Added green led
 //      - Lots of code cleanup and simplification
-// 1.07 Jan 19, 2018 - Maurice Ribble
+// 1.07 Jan 19, 2017 - Maurice Ribble
 //      - Updated upload procedure
+// 1.08 March 16, 2017 - Maurice Ribble
+//      - Fix bug with foot pedal, motor direction, and unplugging EEW5
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -369,12 +370,12 @@ void setup()
 void loop()
 {
   byte    motorSpeed;
-  boolean motorCw;
+  byte motorCw;
   byte    motorPwmVal;
   byte    rawSpeedVal = analogReadSpeedDial();
   
   static boolean pedalOn     = false;
-  static boolean prevMotorCw = true;
+  static byte prevMotorCw    = 2;     // prevMotorCw must be started in a unique state
 
   blinkStatusLed();
 
