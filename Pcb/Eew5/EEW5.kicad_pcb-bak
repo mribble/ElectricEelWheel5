@@ -64,7 +64,7 @@
     (aux_axis_origin 63.754 81.915)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
+      (layerselection 0x00020_00000000)
       (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.150000)
@@ -1442,11 +1442,11 @@
       (net 27 N-0000014))
   )
 
-  (module TO252M (layer F.Cu) (tedit 56AD2A17) (tstamp 56AD2E7F)
+  (module TO252M (layer F.Cu) (tedit 590B26BE) (tstamp 56AD2E7F)
     (at 67.691 38.1)
     (path /5471080B)
     (attr smd)
-    (fp_text reference U3 (at 3.81 5.334) (layer B.SilkS)
+    (fp_text reference U3 (at 0 2.794) (layer F.SilkS)
       (effects (font (size 0.7493 0.7493) (thickness 0.14986)))
     )
     (fp_text value KA7805E (at 0 2.794) (layer B.SilkS)
