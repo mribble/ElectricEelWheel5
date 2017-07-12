@@ -55,6 +55,8 @@
 //      - Updated upload procedure
 // 1.08 March 16, 2017 - Maurice Ribble
 //      - Fix bug with foot pedal, motor direction, and unplugging EEW5
+// 1.09 July 11, 2017 - Maurice Ribble
+//      - Stop blinking green light after 10 seconds
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -193,7 +195,14 @@ inline void motorStop()
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void blinkStatusLed()
 {
-  unsigned long t = millis()%1000;
+  unsigned long t = millis();
+
+  if (t>9900) { // Stop blinking after 10 seconds (overflows after 50 days, but that is fine)
+    digitalWrite(PIN_STATUS, LED_OFF);
+    return;
+  }
+
+  t = t%1000;
 
   if (t<100)
   {
@@ -371,7 +380,6 @@ void loop()
 {
   byte    motorSpeed;
   byte motorCw;
-  byte    motorPwmVal;
   byte    rawSpeedVal = analogReadSpeedDial();
   
   static boolean pedalOn     = false;

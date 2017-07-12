@@ -1,17 +1,7 @@
-update=2/11/2016 6:16:15 PM
-last_client=pcbnew
+update=5/17/2017 12:53:08 PM
+last_client=kicad
 [general]
 version=1
-[eeschema]
-version=1
-LibDir=../../eew4_pcb_v6a
-NetFmtName=PcbnewAdvanced
-RptD_X=0
-RptD_Y=100
-RptLab=1
-LabSize=60
-[eeschema/libraries]
-LibName1=EEW5
 [pcbnew]
 version=1
 LastNetListRead=
@@ -34,3 +24,9 @@ ModuleOutlineThickness=0.150000000000
 [pcbnew/libraries]
 LibDir=
 LibName1=EEW5
+[eeschema]
+version=1
+LibDir=../../eew4_pcb_v6a
+[eeschema/libraries]
+LibName1=EEW5-rescue
+LibName2=EEW5
