@@ -1,4 +1,4 @@
-update=6/26/2018 8:58:33 PM
+update=6/16/2018 2:13:05 PM
 last_client=kicad
 [general]
 version=1
@@ -30,3 +30,6 @@ LibDir=../../eew4_pcb_v6a
 [eeschema/libraries]
 LibName1=EEW5-rescue
 LibName2=EEW5
+LibName3=D:/_my/git/ElectricEelWheelMini/Pcb2/eew
+LibName4=D:/_my/appData/kicad/DreamingRobots/DreamingRobots
+LibName5=C:/Program Files/KiCad/share/kicad/library/74xx
