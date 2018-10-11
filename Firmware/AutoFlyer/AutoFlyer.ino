@@ -26,6 +26,10 @@
 #define BACKWARD 1
 #define STOP 2
 
+#define MOTOR_THRESHOLD 400
+#define MOTOR_OFF_MS 4000
+#define MOTOR_ON_MS 1000
+
 uint8_t gDir = FORWARD;
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39,6 +43,10 @@ void setup() {
   pinMode(PIN_MOT1, OUTPUT);
   digitalWrite(PIN_MOT1, LOW);
   pinMode(PIN_BUTTON, INPUT);
+  analogReference(INTERNAL);  // Sets an internal 1.1V analog read reference
+
+  
+  
 }
 
 void runMotor(uint8_t dir) {
@@ -56,11 +64,14 @@ void runMotor(uint8_t dir) {
   }
 }
 
-void changeMotorDirection() {
+bool changeMotorDirection() {
+  boolean ret = false;
   // Shunt resistor is 0.5 ohms.  Want to detect stall currents of over 200mA.  So 0.2A*0.5 = .1V.  Then scaling that to 1024 with 0->3.3V range gives us 31
-  if (analogRead(APIN_SHUNT) >= 31) {
+  if (analogRead(APIN_SHUNT) >= MOTOR_THRESHOLD) {
     gDir = (gDir == FORWARD) ? BACKWARD : FORWARD;
+    ret = true;
   }
+  return ret;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -69,15 +80,15 @@ void changeMotorDirection() {
 void loop(){
   if (digitalRead(PIN_BUTTON) == HIGH) {
     digitalWrite(PIN_LED, HIGH);
+    gDir = (gDir == FORWARD) ? BACKWARD : FORWARD;
     delay(100);
     digitalWrite(PIN_LED, LOW);
   }
 
   runMotor(gDir);
-  delay(100);
+  delay(MOTOR_ON_MS);
   changeMotorDirection();
   runMotor(STOP);
-  
-  delay(1000);
+  delay(MOTOR_OFF_MS);
 }
 
