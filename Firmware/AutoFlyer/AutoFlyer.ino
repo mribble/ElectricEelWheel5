@@ -15,22 +15,55 @@
 // Configuration flags
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 // Digital/analog pins
-#define PIN_LED     2
-#define PIN_MOT0    0
-#define PIN_MOT1    1
-#define PIN_BUTTON  3
-//#define PIN_SHUNT   4
-#define APIN_SHUNT  2
+#define PIN_LED       2
+#define PIN_HB_C0     7
+#define PIN_HB_C1     8
+#define PIN_HB_C2     9
+#define PIN_HB_C3    10
+#define PIN_BUTTON    1
+#define APIN_SHUNT   A0
 
 #define FORWARD 0
 #define BACKWARD 1
 #define STOP 2
 
-#define MOTOR_THRESHOLD 400
-#define MOTOR_OFF_MS 4000
-#define MOTOR_ON_MS 1000
+#define MOTOR_THRESHOLD 60
+#define MOTOR_OFF_MS 2000
+#define MOTOR_ON_MS 2000
 
 uint8_t gDir = FORWARD;
+
+
+// https://en.wikipedia.org/wiki/H_bridge
+// S? are the names being used by wikipedia
+// ??G are the names used on the hbridge part being used
+// C? are the names used on the schematic
+//           S1/P1G/C3  |  S2/N1G/C0  |  S3/P2G/C2  |  S4/N2G/C1
+// Stop      closed(1)     closed(0)     closed(1)     closed(0)
+// Fordward  open(0)       closed(0)     closed(1)     open(1)
+// Backward  closed(1)     open(1)       open(0)       closed(0)
+// Note because the hbridge part being used used n and p mosfets the
+// logic values used to control open/closed are inversed for N gates
+void runMotor(uint8_t dir) {
+  if (dir == FORWARD) {
+    digitalWrite(PIN_HB_C0, LOW);
+    digitalWrite(PIN_HB_C1, HIGH);
+    digitalWrite(PIN_HB_C2, HIGH);
+    digitalWrite(PIN_HB_C3, LOW);
+  }
+  else if (dir == BACKWARD) {
+    digitalWrite(PIN_HB_C0, HIGH);
+    digitalWrite(PIN_HB_C1, LOW);
+    digitalWrite(PIN_HB_C2, LOW);
+    digitalWrite(PIN_HB_C3, HIGH);
+  }
+  else { // STOP
+    digitalWrite(PIN_HB_C0, LOW);
+    digitalWrite(PIN_HB_C1, LOW);
+    digitalWrite(PIN_HB_C2, HIGH);
+    digitalWrite(PIN_HB_C3, HIGH);
+  }
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // setup - Main program init (this is just how Arduino code works)
@@ -38,35 +71,20 @@ uint8_t gDir = FORWARD;
 void setup() {
   pinMode(PIN_LED, OUTPUT);
   digitalWrite(PIN_LED, LOW);
-  pinMode(PIN_MOT0, OUTPUT);
-  digitalWrite(PIN_MOT0, LOW);
-  pinMode(PIN_MOT1, OUTPUT);
-  digitalWrite(PIN_MOT1, LOW);
+
+  pinMode(PIN_HB_C0, OUTPUT);
+  pinMode(PIN_HB_C1, OUTPUT);
+  pinMode(PIN_HB_C2, OUTPUT);
+  pinMode(PIN_HB_C3, OUTPUT);
+  runMotor(STOP);
+  
   pinMode(PIN_BUTTON, INPUT);
   analogReference(INTERNAL);  // Sets an internal 1.1V analog read reference
-
-  
-  
-}
-
-void runMotor(uint8_t dir) {
-  if (dir == FORWARD) {
-    digitalWrite(PIN_MOT0, HIGH);
-    digitalWrite(PIN_MOT1, LOW);
-  }
-  else if (dir == BACKWARD) {
-    digitalWrite(PIN_MOT0, LOW);
-    digitalWrite(PIN_MOT1, HIGH);
-  }
-  else { // STOP
-    digitalWrite(PIN_MOT0, LOW);
-    digitalWrite(PIN_MOT1, LOW);
-  }
 }
 
 bool changeMotorDirection() {
   boolean ret = false;
-  // Shunt resistor is 0.5 ohms.  Want to detect stall currents of over 200mA.  So 0.2A*0.5 = .1V.  Then scaling that to 1024 with 0->3.3V range gives us 31
+  // Shunt resistor is 0.5 ohms.  Want to detect stall currents of over 150mA.  So 0.15A*0.5 = .075V.  Then scaling that to 1024 with 0->1.1V range gives us 70
   if (analogRead(APIN_SHUNT) >= MOTOR_THRESHOLD) {
     gDir = (gDir == FORWARD) ? BACKWARD : FORWARD;
     ret = true;

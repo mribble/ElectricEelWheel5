@@ -17,7 +17,7 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // REVISIONS:
-// 1.00 August 1, 2018 - Maurice Ribble
+// 1.00 Oct 19, 2018 - Maurice Ribble
 //      Port from EEW 5.1 with initial modifications
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -123,45 +123,19 @@ inline byte motorRun(byte motorSpeed)
   }
   else if (motorSpeed > prevMotorSpeed) {
     prevMotorSpeed++;
+    if (prevMotorSpeed < DEAD_ZONE) {  // Jump motor to slow speed so we don't have lag starting motor
+      prevMotorSpeed = DEAD_ZONE;
+    }
     motorSpeed = prevMotorSpeed;
   }
   // This delay can happen a max of 127 times so the ramp time to reach max speed is 127*delay
-  delay(15);
+  delay(16);
  
   //calculate pwm value to use for compare A (OCR1A). Maps speedIndex to resolution of counter timer1, (Note: T1_MAX_TIME is full off, 0 is full on)
   byte motorPwmVal = (motorSpeed == 0) ? T1_MAX_TIME : map(motorSpeed,DEAD_ZONE,127,T1_MAX_TIME-SLOW_ZONE,0);
 
   OCR1A = motorPwmVal;  // Adjusts pwm speed
   return motorSpeed;
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// blinkStatusLed - Blinks the green status LED for 1/10 of a second every 1 second
-//  input       - void
-//  return      - void
-//  Side effect - Changes status port pin
-//  Note1       - Due to a timer rollover you'll get one incorrect blink about every 50 days, and I don't care
-//  Note2       - Must be more often than once every tenth of a second or it won't work
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-void blinkStatusLed()
-{
-  unsigned long t = millis();
-
-  if (t>2990) { // Stop blinking after 10 seconds (overflows after 50 days, but that is fine)
-    digitalWrite(PIN_STATUS, LED_ON);
-    return;
-  }
-
-  t = t%1000;
-
-  if (t<500)
-  {
-    digitalWrite(PIN_STATUS, LED_OFF);
-  }
-  else
-  {
-    digitalWrite(PIN_STATUS, LED_ON);
-  }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -272,12 +246,11 @@ void setPwmParams()
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // setup - Main program init (this is just how Arduino code works)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 void setup()
 {
+  uint8_t i;
   setAdcParams();
   setPwmParams();
 
@@ -286,9 +259,17 @@ void setup()
   pinMode(PIN_STATUS,  OUTPUT);
   pinMode(PIN_PEDAL,   INPUT_PULLUP);
 
+  // Blink the LED 3 times during startup
+  for (i=0; i<3; ++i) {
+    digitalWrite(PIN_STATUS, LED_ON);
+    delay(200);
+    digitalWrite(PIN_STATUS, LED_OFF);
+    delay(200);
+  }
+  digitalWrite(PIN_STATUS, LED_ON);
+
   motorPwmOn();
   digitalWrite(PIN_MOT_EN, HIGH);
-  delay(10);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -302,8 +283,6 @@ void loop()
 
   static boolean pedalOn = false;
   static byte prevMotorCw = 2;  // prevMotorCw must be started in a unique state
-
-  blinkStatusLed();
 
   // Convert raw value (0-255) into a 0-127 range plus direction
   // This new mapping makes center of potentiometer 0 and both extremes 127 
@@ -327,7 +306,6 @@ void loop()
     do  // Debounce
     { 
       motorRun(0);
-      blinkStatusLed();
       delay(10);
     } while(digitalReadFast(PIN_PEDAL) == LOW);
   }
